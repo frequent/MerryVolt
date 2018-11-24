@@ -1,5 +1,5 @@
-/* ================================= FONTS =========================================== */
-/* -------------------------- Material Design Icons ---------------------------------- */
+/* ============================ FONTS ======================================= */
+/* ---------------------- Material Design Icons ----------------------------- */
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -36,9 +36,8 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
-/* ------------------------------ Ubuntu Web Font ------------------------------------ */
+/* -------------------------- Ubuntu Web Font ------------------------------- */
 /* ubuntu-regular - latin */
-/* https://google-webfonts-helper.herokuapp.com/fonts/ubuntu?subsets=latin */
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
@@ -63,4 +62,1084 @@
        url('font/ubuntu-v12-latin-700.woff') format('woff'), /* Modern Browsers */
        url('font/ubuntu-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
        url('font/ubuntu-v12-latin-700.svg#Ubuntu') format('svg'); /* Legacy iOS */
+}
+/* ----------------------- Fontawesome brands ------------------------------- */
+/*! * Font Awesome Free 5.1.1 by @fontawesome - https://fontawesome.com * 
+      License - https://fontawesome.com/license 
+      (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  src: url('font/fa-brands-400.eot');
+  src: url('font/fa-brands-400.eot?#iefix') format("embedded-opentype"),
+       url('font/fa-brands-400.woff2') format("woff2"),
+       url('font/fa-brands-400.woff') format("woff"),
+       url('font/fa-brands-400.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.fa,.fab,.fal,.far,.fas{
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing:antialiased;
+  display:inline-block;
+  font-style:normal;
+  font-variant:normal;
+  text-rendering:auto;
+  line-height:1
+}
+.fab {
+  font-family:"Font Awesome 5 Brands"
+}
+.fa-facebook:before{
+  content:"\f09a"
+}
+.fa-facebook-f:before{
+  content:"\f39e"
+}
+.fa-twitter:before{
+    content:"\f099"
+}
+.fa-twitter-square:before{
+    content:"\f081"
+}
+
+/* ============================= THEMEING =================================== */
+.volt-body {
+  height: 100%;
+  background-color: #612095;
+}
+.volt-header {
+  background-color: #612095;
+}
+.volt-page-content {
+  background-color: #612095;
+}
+/* ============================= HEADER ====================================== */
+@media only screen and (max-width: 48em) {
+  .mdl-layout__header-row {
+    padding: 0 1em 0 1em;
+  }
+}
+.volt-home-icon {
+  height: 32px;
+  width: auto;
+}
+
+/* =============================== SNOW ===================================== */
+/* thx: http://standardista.com/snow/ */
+.flake {
+background-image:
+		-webkit-gradient(linear, 0% 0%, 100% 0, color-stop(0.4, rgba(255,255,255,0)), color-stop(0.42, #fff), color-stop(0.58, #fff), 
+		color-stop(0.6, rgba(255,255,255,0))),
+		-webkit-gradient(linear, 0% 0%, 0 100%, color-stop(0.4, rgba(255,255,255,0)), color-stop(0.42, #fff), color-stop(0.58, #fff), 
+		color-stop(0.6, rgba(255,255,255,0))),
+		-webkit-gradient(linear, 0% 100%, 100% 0, color-stop(0.4, rgba(255,255,255,0)), color-stop(0.42, #fff), color-stop(0.58, #fff), 
+		color-stop(0.6, rgba(255,255,255,0))),
+		-webkit-gradient(linear, 0% 50%, 50% 100%, color-stop(0.35, rgba(255,255,255,0)), color-stop(0.38, #fff), color-stop(0.63, #fff), 
+		color-stop(0.65, rgba(255,255,255,0)));
+background-image:
+		-webkit-linear-gradient(180deg, rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
+		-webkit-linear-gradient(90deg,  rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
+		-webkit-linear-gradient(45deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%),
+		-webkit-linear-gradient(135deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%);
+background-image:
+		-moz-linear-gradient(180deg,rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%, rgba(255,255,255,0) 100%),
+		-moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%, rgba(255,255,255,0) 100%),
+		-moz-linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%),
+		-moz-linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
+background-image:
+		-ms-linear-gradient(180deg, rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
+		-ms-linear-gradient(90deg,  rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
+		-ms-linear-gradient(45deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%),
+		-ms-linear-gradient(135deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%);
+background-image:
+		-o-linear-gradient(180deg, rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
+		-o-linear-gradient(90deg,  rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
+		-o-linear-gradient(45deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%),
+		-o-linear-gradient(135deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%);
+background-image:
+		linear-gradient(180deg, rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
+		linear-gradient(90deg,  rgba(255,255,255,0) 40%, #fff 40%, #fff 60%, rgba(255,255,255,0) 60%),
+		linear-gradient(45deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%),
+		linear-gradient(135deg,  rgba(255,255,255,0) 43%, #fff 43%, #fff 57%, rgba(255,255,255,0) 57%);
+		
+}
+
+/* default animation and transform */
+.flake {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+
+  -webkit-transform-origin: left -1.25em;
+  -moz-transform-origin: left -1.25em;
+  -ms-transform-origin: left -1.25em;
+  -o-transform-origin: left -1.25em;
+  transform-origin: left -1.25em;
+  -webkit-animation-name: falling;
+  -moz-animation-name: falling;
+  animation-name: falling;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-direction:normal;
+  -moz-animation-direction:normal;
+  animation-direction:normal;
+  -webkit-animation-iteration-count: 20;
+  -moz-animation-iteration-count: 20;
+  animation-iteration-count: 20;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: none;
+  -moz-animation-fill-mode: none;
+  -webkit-animation-play-state:running;
+  -moz-animation-play-state:running;
+  /* or 
+  -moz-animation: falling 3s linear 2s 20;
+  */
+}
+
+/* animation used for ALL snowflakes */
+@-webkit-keyframes falling {
+	0% { 
+		-webkit-transform: 
+			translate3d(0,0,0) 
+			rotate(0deg) 
+			scale(0.9,0.9);
+		transform:
+			translate3d(0,0,0) 
+			rotate(0deg) 
+			scale(0.9,0.9);
+	}
+	100% { 
+		-webkit-transform: 
+			translate3d(30px,70em,0) 
+			rotate(360deg) 
+			scale(1.1,1.1);
+		transform:
+		  translate3d(30px,70em,0) 
+			rotate(360deg) 
+			scale(1.1,1.1);;
+	}	
+}
+@-moz-keyframes falling {
+	0% { 
+		-moz-transform: 
+			translate3d(0,0,0) 
+			rotate(0deg) 
+			scale(0.9,0.9);
+		transform:
+			translate3d(0,0,0) 
+			rotate(0deg) 
+			scale(0.9,0.9);
+	}
+	100% { 
+		-moz-transform: 
+			translate(30px,70em) 
+			rotate(360deg) 
+			scale(1.1,1.1);
+		transform:
+			translate(30px,70em) 
+			rotate(360deg) 
+			scale(1.1,1.1);
+	}
+}
+@keyframes falling {
+	0% { 
+		transform: 
+			translate3d(0,0,0) 
+			rotate(0deg) 
+			scale(0.9,0.9);
+	}
+	100% { 
+		transform: 
+			translate(30px,70em) 
+			rotate(360deg) 
+			scale(1.1,1.1);
+	}
+}
+@media only screen and (max-width: 48em) {
+  @-webkit-keyframes falling {
+  	0% { 
+  		-webkit-transform: 
+  			translate3d(0,0,0) 
+  			rotate(0deg) 
+  			scale(0.9,0.9);
+  		transform:
+  			translate3d(0,0,0) 
+  			rotate(0deg) 
+  			scale(0.9,0.9);
+  	}
+  	100% { 
+  		-webkit-transform: 
+  			translate3d(30px,100em,0) 
+  			rotate(360deg) 
+  			scale(1.1,1.1);
+  		transform:
+  		  translate3d(30px,100em,0) 
+  			rotate(360deg) 
+  			scale(1.1,1.1);;
+  	}	
+  }
+  @-moz-keyframes falling {
+  	0% { 
+  		-moz-transform: 
+  			translate3d(0,0,0) 
+  			rotate(0deg) 
+  			scale(0.9,0.9);
+  		transform:
+  			translate3d(0,0,0) 
+  			rotate(0deg) 
+  			scale(0.9,0.9);
+  	}
+  	100% { 
+  		-moz-transform: 
+  			translate(30px,100em) 
+  			rotate(360deg) 
+  			scale(1.1,1.1);
+  		transform:
+  			translate(30px,100em) 
+  			rotate(360deg) 
+  			scale(1.1,1.1);
+  	}
+  }
+  @keyframes falling {
+  	0% { 
+  		transform: 
+  			translate3d(0,0,0) 
+  			rotate(0deg) 
+  			scale(0.9,0.9);
+  	}
+  	100% { 
+  		transform: 
+  			translate(30px,100em) 
+  			rotate(360deg) 
+  			scale(1.1,1.1);
+  	}
+  }
+}
+@media only screen and (max-width: 25em) {
+  @-webkit-keyframes falling {
+  	0% { 
+  		-webkit-transform: 
+  			translate3d(0,0,0) 
+  			rotate(0deg) 
+  			scale(0.9,0.9);
+  		transform:
+  			translate3d(0,0,0) 
+  			rotate(0deg) 
+  			scale(0.9,0.9);
+  	}
+  	100% { 
+  		-webkit-transform: 
+  			translate3d(30px,150em,0) 
+  			rotate(360deg) 
+  			scale(1.1,1.1);
+  		transform:
+  		  translate3d(30px,150em,0) 
+  			rotate(360deg) 
+  			scale(1.1,1.1);;
+  	}	
+  }
+  @-moz-keyframes falling {
+  	0% { 
+  		-moz-transform: 
+  			translate3d(0,0,0) 
+  			rotate(0deg) 
+  			scale(0.9,0.9);
+  		transform:
+  			translate3d(0,0,0) 
+  			rotate(0deg) 
+  			scale(0.9,0.9);
+  	}
+  	100% { 
+  		-moz-transform: 
+  			translate(30px,150em) 
+  			rotate(360deg) 
+  			scale(1.1,1.1);
+  		transform:
+  			translate(30px,150em) 
+  			rotate(360deg) 
+  			scale(1.1,1.1);
+  	}
+  }
+  @keyframes falling {
+  	0% { 
+  		transform: 
+  			translate3d(0,0,0) 
+  			rotate(0deg) 
+  			scale(0.9,0.9);
+  	}
+  	100% { 
+  		transform: 
+  			translate(30px,150em) 
+  			rotate(360deg) 
+  			scale(1.1,1.1);
+  	}
+  }
+}
+
+	
+/* different sizes, and default origins based on size */
+#flakes i:nth-of-type(4n) {
+	height:30px;
+	width:30px;
+	-webkit-transform-origin: right -30px;
+	-moz-transform-origin: right -30px;
+	-ms-transform-origin: right -30px;
+	-o-transform-origin: right -30px;
+	transform-origin: right -30px;
+}
+
+#flakes i:nth-of-type(4n+1) {
+	height:24px;
+	width:24px;
+	-webkit-transform-origin: left -30px;
+	-moz-transform-origin: left -30px;
+	-o-transform-origin: left -30px;
+	-ms-transform-origin: left -30px;
+	transform-origin: left -30px;
+}
+#flakes i:nth-of-type(4n+2) {
+	height:10px;
+	width:10px;
+	-webkit-transform-origin: -30px 0;
+	-moz-transform-origin: -30px 0;
+	-o-transform-origin: -30px 0;
+	-ms-transform-origin: -30px 0;
+	transform-origin: -30px 0;
+}
+/* different speeds, with iteration counts to equal 3minutes approx. */
+#flakes i:nth-of-type(4n) {
+	-webkit-animation-duration: 5.3s; 
+	-moz-animation-duration: 5.3s;
+	animation-duration: 5.3s;
+	-webkit-animation-iteration-count: 12;
+  -moz-animation-iteration-count: 12;
+  animation-iteration-count: 12;
+	-webkit-transform-origin: -10px -20px;
+	-o-transform-origin: -10px -20px;
+	-moz-transform-origin: -10px -20px;
+	-ms-transform-origin: -10px -20px;
+	transform-origin: -10px -20px;
+}
+#flakes i:nth-of-type(4n+1){
+	-webkit-animation-duration: 3.1s; 
+	-moz-animation-duration: 3.1s;
+	animation-duration: 3.1s;
+	-webkit-animation-iteration-count: 20;
+	-moz-animation-iteration-count: 20;
+	animation-iteration-count: 20;
+	-webkit-transform-origin: 10px -20px;
+	-o-transform-origin: 10px -20px;
+	-ms-transform-origin: 10px -20px;
+	-moz-transform-origin: 10px -20px;
+	transform-origin: 10px -20px;
+}
+#flakes i:nth-of-type(4n+2) {
+	-webkit-animation-duration: 1.7s;
+	-moz-animation-duration: 1.7s;
+	animation-duration: 1.7s;
+	-webkit-animation-iteration-count: 35;
+	-moz-animation-iteration-count: 35;
+	animation-iteration-count: 35;
+	-webkit-transform-origin: right -20px;
+	-moz-transform-origin: right -20px;
+	-o-transform-origin: right -20px;
+	-ms-transform-origin: right -20px;
+	transform-origin: right -20px;
+}
+	
+/* different delays so they don't all start at the same time */
+#flakes i:nth-of-type(3n) {
+	-webkit-animation-delay: 2.3s;
+	-moz-animation-delay: 2.3s;
+	}
+#flakes i:nth-of-type(3n+1) {
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	}
+#flakes i:nth-of-type(3n+2) {
+	-webkit-animation-delay: 3.4s;
+	-moz-animation-delay: 3.4s;
+	}
+	
+/* playing with timing functions to make it a teeny bit more random like */
+#flakes i:nth-of-type(5n) {
+  -webkit-animation-timing-function:ease-in-out;
+  -moz-animation-timing-function:ease-in-out;
+  animation-timing-function:ease-in-out;
+}
+#flakes i:nth-of-type(5n+1) {
+  -webkit-animation-timing-function:ease-out;
+  -moz-animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+}
+#flakes i:nth-of-type(5n+2) {
+  -webkit-animation-timing-function:ease;
+  -moz-animation-timing-function:ease;
+  animation-timing-function:ease;
+}
+#flakes i:nth-of-type(5n+3) {
+  -webkit-animation-timing-function:ease-in;
+  -moz-animation-timing-function:ease-in;
+  animation-timing-function:ease-in;
+}
+#flakes i:nth-of-type(5n+4) {
+  -webkit-animation-timing-function:linear;
+  -moz-animation-timing-function:linear;
+  animation-timing-function:linear;
+}
+#flakes i:nth-of-type(11n) {
+  -webkit-animation-timing-function:cubic-bezier(0.2, 0.3, 0.8, 0.9);
+  -moz-animation-timing-function:cubic-bezier(0.2, 0.3, 0.8, 0.9);
+  animation-timing-function:cubic-bezier(0.2, 0.3, 0.8, 0.9);
+}
+
+/* playing with opacity to make it a teeny bit more random like */
+#flakes i:nth-of-type(7n){
+  opacity: 0.5;
+}
+#flakes i:nth-of-type(7n+2) {
+  opacity: 0.3;
+}
+#flakes i:nth-of-type(7n+4) {
+  opacity: 0.7;
+}
+#flakes i:nth-of-type(7n+6) {
+  opacity: 0.6;
+	-webkit-animation-timing-function:ease-in;
+	-moz-animation-timing-function:ease-in;
+	animation-timing-function: ease-in;
+	-webkit-transform-origin: left 10px;
+	-moz-transform-origin: left 10px;
+	-o-transform-origin: left 10px;
+	-ms-transform-origin: left 10px;
+	transform-origin: left 10px;
+}
+#flakes i:nth-of-type(7n+1){
+  opacity: 0.8;
+}
+#flakes {
+  position: relative;
+  top: -30px;
+  width:100%;
+  text-align:center;
+}
+@media (max-width: 96em) {
+  #flakes {
+    top: -200px;
+  }
+}
+@media (max-width: 48em) {
+  #flakes {
+    top: -140px;
+  }
+}
+
+
+/* ============================= CALENDAR =================================== */
+/* thx https://webdesign.tutsplus.com/tutorials/how-to-build-a-festive-advent-calendar-with-css-grid--cms-30070
+   thx https://codepen.io/michelenl/pen/RWKaYP
+*/
+.grid-1 {
+  display: grid;
+  width: 96%;
+  max-width: 56em;
+  margin: 2% auto;
+  grid-template-rows: auto;
+  grid-gap: 1.5em;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:    "t      t       t       d2      d7      d8"
+                          "t      t       t       d4      d11     d12"
+                          "t      t       t       d19     d9      d13"
+                          "d6     d1      d24     d24     d21     d20"
+                          "d17    d18     d24     d24     d5      d22"
+                          "d3     d23     d16     d14     d10     d15";
+}
+@media only screen and (max-width: 48em) {
+  .grid-1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:  "t      t       t"
+                          "d23    d20     d12"
+                          "d2     d14     d4"
+                          "d5     d22     d16"
+                          "d1     d7      d9"
+                          "d10    d11     d18"
+                          "d13    d3      d15"
+                          "d6     d17     d8"
+                          "d19    d24     d21";
+  }
+}
+@media only screen and (max-width: 25em) {
+  .grid-1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:  "t      t"
+                          "d23    d20"
+                          "d2     d14"
+                          "d5     d22"
+                          "d1     d7"
+                          "d10    d11"
+                          "d13    d3"
+                          "d6     d17"
+                          "d19    d24"
+                          "d12    d4"
+                          "d16    d9"
+                          "d18    d15"
+                          "d8     d21";
+  }
+}
+
+.title {
+  grid-area: t;
+}
+.day-1 {
+  grid-area: d1;
+}
+.day-2 {
+  grid-area: d2;
+}
+.day-3 {
+  grid-area: d3;
+}
+.day-4 {
+  grid-area: d4;
+}
+.day-5 {
+  grid-area: d5;
+}
+.day-6 {
+  grid-area: d6;
+}
+.day-7 {
+  grid-area: d7;
+}
+.day-8 {
+  grid-area: d8;
+}
+.day-9 {
+  grid-area: d9;
+}
+.day-10 {
+  grid-area: d10;
+}
+.day-11 {
+  grid-area: d11;
+}
+.day-12 {
+  grid-area: d12;
+}
+.day-13 {
+  grid-area: d13;
+}
+.day-14 {
+  grid-area: d14;
+}
+.day-15 {
+  grid-area: d15;
+}
+.day-16 {
+  grid-area: d16;
+}
+.day-17 {
+  grid-area: d17;
+}
+.day-18 {
+  grid-area: d18;
+}
+.day-19 {
+  grid-area: d19;
+}
+.day-20 {
+  grid-area: d20;
+}
+.day-21 {
+  grid-area: d21;
+}
+.day-22 {
+  grid-area: d22;
+}
+.day-23 {
+  grid-area: d23;
+}
+.day-24 {
+  grid-area: d24;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  40% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  60% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  40% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  60% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+.xmas-door_frame {
+  -webkit-perspective: 850px;
+          perspective: 850px;
+  z-index: 666;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  height: 10em;
+  position: relative;
+}
+.xmas-door {
+  width: 100%;
+  border: 2px dashed transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box  ;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 0;
+     -moz-transform-origin: 0;
+       -o-transform-origin: 0;
+      -ms-transform-origin: 0;
+          transform-origin: 0;
+  -webkit-perspective: 850px;
+          perspective: 850px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+.is-locked .xmas-door {
+  cursor: not-allowed;
+}
+.is-locked .xmas-input:checked + .xmas-door {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+  -webkit-animation: shake .7s;
+  -moz-animation: shake .7s;
+	animation: shake .7s;
+}
+.xmas-door_frame:not(.is-locked):hover {
+  z-index: 999;
+}
+.xmas-door_frame:not(.is-locked):hover .xmas-input:not(:checked) + .xmas-door {
+  border-color: #fff;
+}
+.grid-1 .xmas-input {
+  position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px,1px,1px,1px);
+  /* visibility: hidden;
+     display: none XXX these breaks keydown binding*/
+}
+.xmas-door_frame {
+  -webkit-perspective: 850px;
+          perspective: 850px;
+  z-index: 666;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  height: 10em;
+  position: relative;
+}
+.xmas-door {
+  width: 100%;
+  border: 2px dashed transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box  ;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 0;
+     -moz-transform-origin: 0;
+       -o-transform-origin: 0;
+      -ms-transform-origin: 0;
+          transform-origin: 0;
+  -webkit-perspective: 850px;
+          perspective: 850px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+.is-locked .xmas-door {
+  cursor: not-allowed;
+}
+.is-locked .xmas-input:checked + .xmas-door {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+  -webkit-animation: shake .7s;
+  -moz-animation: shake .7s;
+	animation: shake .7s;
+}
+.xmas-door_frame:not(.is-locked):hover {
+  z-index: 999;
+}
+.xmas-door_frame:not(.is-locked):hover .xmas-input:not(:checked) + .xmas-door {
+  border-color: #fff;
+}.xmas-door_unset {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.xmas-door_clear {
+  display: none;
+}
+.xmas-door_frame:not(.is-locked) .xmas-input:checked + .xmas-door {
+  -webkit-transform: rotateY(-97deg);
+          transform: rotateY(-97deg);
+  -webkit-perspective-origin: 0;
+          perspective-origin: 0;
+  transition: all .25s ease-in;
+}
+/* background */
+.xmas-door:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, .7);
+  width: 100%;
+  height: 100%;
+  top: -1em;
+  left: 0;
+  -webkit-clip-path: polygon(0 25%, 100% 25%, 100% 75%, 0 75%);
+  clip-path: polygon(0 25%, 100% 25%, 100% 75%, 0 75%);
+  -webkit-transform: rotate(-21deg);
+  -moz-transform: rotate(-21deg);
+  -ms-transform: rotate(-21deg);
+  -o-transform: rotate(-21deg);
+  transform: rotate(-21deg);
+  z-index: -1;
+}
+.xmas-door:before {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, .7);
+  width: 100%;
+  height: 100%;
+  top: 1em;
+  left: 0;
+  -webkit-clip-path: polygon(0 25%, 100% 25%, 100% 75%, 0 75%);
+  clip-path: polygon(0 25%, 100% 25%, 100% 75%, 0 75%);
+  -webkit-transform: rotate(-21deg);
+  -moz-transform: rotate(-21deg);
+  -ms-transform: rotate(-21deg);
+  -o-transform: rotate(-21deg);
+  transform: rotate(-21deg);
+  z-index: -1;
+}
+.xmas-door_date {
+  height: 100%;
+  line-height: 2em;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  color: #612095;
+}
+.day-24 .xmas-door_date {
+  font-size: 80px;
+  line-height: 3em;
+}
+@media only screen and (max-width: 48em) {
+  .day-24 .xmas-door_date {
+    font-size: 45px;
+    line-height: 2em;
+  }
+}
+.xmas-door_unset {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.xmas-door_clear {
+  display: none;
+}
+.xmas-door_frame:not(.is-locked) .xmas-input:checked + .xmas-door {
+  -webkit-transform: rotateY(-97deg);
+          transform: rotateY(-97deg);
+  -webkit-perspective-origin: 0;
+          perspective-origin: 0;
+  transition: all .25s ease-in;
+}
+/* background */
+.xmas-door:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, .7);
+  width: 100%;
+  height: 100%;
+  top: -1em;
+  left: 0;
+  -webkit-clip-path: polygon(0 25%, 100% 25%, 100% 75%, 0 75%);
+  clip-path: polygon(0 25%, 100% 25%, 100% 75%, 0 75%);
+  -webkit-transform: rotate(-21deg);
+  -moz-transform: rotate(-21deg);
+  -ms-transform: rotate(-21deg);
+  -o-transform: rotate(-21deg);
+  transform: rotate(-21deg);
+  z-index: -1;
+}
+.xmas-door:before {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, .7);
+  width: 100%;
+  height: 100%;
+  top: 1em;
+  left: 0;
+  -webkit-clip-path: polygon(0 25%, 100% 25%, 100% 75%, 0 75%);
+  clip-path: polygon(0 25%, 100% 25%, 100% 75%, 0 75%);
+  -webkit-transform: rotate(-21deg);
+  -moz-transform: rotate(-21deg);
+  -ms-transform: rotate(-21deg);
+  -o-transform: rotate(-21deg);
+  transform: rotate(-21deg);
+  z-index: -1;
+}
+.xmas-door_date {
+  height: 100%;
+  line-height: 2em;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  color: #612095;
+}
+.day-24 .xmas-door_date {
+  font-size: 80px;
+  line-height: 3em;
+}
+@media only screen and (max-width: 48em) {
+  .day-24 .xmas-door_date {
+    font-size: 45px;
+    line-height: 2em;
+  }
+}
+
+/* ============================= POPUP ====================================== */
+/* thx: https://codepen.io/arcs/pen/BodWvJ */
+
+.volt-dialog {
+  font-family: "Ubuntu";
+  display: block;
+  position: absolute;
+  top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 1px;
+  z-index: 2;
+  background-color: #612095;
+  border-radius: 2em;
+  -webkit-transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
+  -moz-transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
+  -ms-transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
+  -o-transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
+  transition: all 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
+}
+.volt-dialog .volt-dialog-content,
+.volt-dialog .volt-dialog-actions {
+  display: none;
+}
+.volt-dialog-active .volt-dialog-content,
+.volt-dialog-active .volt-dialog-actions {
+  display: block;
+}
+.volt-dialog-active .volt-dialog-actions {
+  text-align: right;
+}
+.volt-dialog-active {
+  border: none;
+  box-shadow: 0 9px 46px 8px rgba(0,0,0,.14), 0 11px 15px -7px rgba(0,0,0,.12), 0 24px 38px 3px rgba(0,0,0,.2);
+  width: 60%;
+  top: 25%;
+  height: auto;
+  min-height: 20em;
+  border-radius: 0;
+  background-color: #fff;
+  border-radius: 1em;
+}
+@media only screen and (max-width: 48em) {
+  .volt-dialog-active {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  } 
+}
+@media only screen and (max-width: 32em) {
+  .volt-dialog-active {
+    width: auto;
+    margin: 0 2em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+.volt-dialog-content {
+  padding: 0;
+}
+.volt-dialog-close {
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  background: #fff;
+  z-index: 1005;
+}
+.volt-dialog-close:hover {
+  background: #fff;
+}
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+  background-color: transparent;
+}
+.mdl-tabs__tab {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  width: 33%;
+}
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+  font-weight: 700;
+  color: #fff;
+  background-color: rgba(255,255,255, .30);
+}
+.mdl-tabs__tab-bar {
+  border: 2px solid #FFF;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background: #612095;
+  color: #fff;
+}
+.mdl-tabs__tab {
+  border-right: 2px solid #fff;
+}
+.mdl-tabs__tab:last-child {
+    border-right-width: 0;
+}
+.mdl-tabs__content-item,
+.mdl-tabs__content-paragraph {
+  font-family: Ubuntu;
+  text-align: justify;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: auto;
+  max-width: 100%;
+  font-size: 1.2em;
+  letter-spacing: -.5px;
+}
+.is-active > .mdl-tabs__content-paragraph {
+  margin-top: 1em;
+}
+@media only screen and (max-width: 48em) {
+  .mdl-tabs__content-item,
+  .mdl-tabs__content-paragraph {
+    font-size: 1.1em;
+  }  
+}
+.mdl-tabs__content-paragraph {
+  margin: 0 1em;
+}
+.mdl-tabs__content-item {
+  padding-right: 2em;
+  margin-bottom: .5em;
+}
+.mdl-tabs__content-header {
+  text-align: center;
+  font-family: Ubuntu;
+  color: #612095;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.mdl-tabs__content-list {
+  
+}
+@media only screen and (max-width: 32em) {
+  .mdl-tabs__tab {
+    font-size: 1.25em;
+  }
+}
+.volt-dialog-close-form {
+  height: 0;
+}
+.volt-dialog-action-form {
+  display: inline-block;
+  vertical-align: top;
+}
+.volt-dialog-action-form .fab {
+  font-size: 2em;
+  color: #612095;
+}
+.volt-dialog-action-form .mdl-button {
+  height: 56px;
+}
+.volt-dialog__action-share {
+  height: 48px;
+  font-family: Ubuntu;
+  color: #612095;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 42px;
+}
+@media only screen and (max-width: 32em) {
+  .mdl-dialog__actions > .volt-dialog__action-share,
+  .mdl-dialog__actions > .volt-dialog-action-form {
+    margin-right: 0;  
+  }
 }

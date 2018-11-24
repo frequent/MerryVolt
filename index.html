@@ -3,16 +3,55 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Volt Calendar</title>
 
-    <script type="text/javascript" src="rsvp.latest.js"></script>
-    <script type="text/javascript" src="renderjs.latest.js"></script>
+    <meta name="application-name" content="Volt Xmas Calendar">
+    <meta name="description" content="Introductng a new proposition for the European Parliament Elections every day until Christmas.">
+    <meta name="url" content="https://www.voltxmas.eu/">
+
+    <meta property="og:site_name" content="Volt Xmas Calendar">
+    <meta property="og:description" content="Introductng a proposition from our Political Program for the European Parliament Elections every day until Christmas.">
+    <meta property="og:url" content="https://www.voltxmas.eu/">
+    <meta property="og:locale" content="en_en">
+
+    <meta name="twitter:title" content="Volt Xmas Calendar">
+    <meta name="twitter:description" content="Introductng a proposition from our Political Program for the European Parliament Elections every day until Christmas.">
+    <meta name="twitter:url" content="https://www.voltxmas.eu/">
+    <meta name="twitter:creator" content="@volteuropa">
+
+    <link rel="icon" href="img/favicon.min.png">
+    <link rel="manifest" href="manifest.json" /> 
+
+    <style type="text/css">
+      .volt-splash:before {
+        width: 100%;
+        position: absolute;
+        background: url("img/volt_snow_icon_256x256.min.png") no-repeat center center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        height: 100%;
+        overflow: hidden;
+        z-index: 999999;
+        background-color: #612095;
+        content: "";
+      }
+    </style>
+
+    <script type="text/javascript" src="rsvp.latest.min.js"></script>
+    <script type="text/javascript" src="renderjs.latest.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </head>
-  <body class="splash">
+  <body class="volt-splash volt-body">
     <div data-gadget-url="gadget_volt.html"
       data-gadget-scope="volt"
       data-gadget-sandbox="public">
     </div>
   </body>
 </html>
+
+
+
+.

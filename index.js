@@ -20,7 +20,6 @@
           return my_volt_gadget.render(OPTION_DICT);
         })
         .push(null, function (my_error) {
-          console.log(my_error);
           throw my_error;
         });
     });
