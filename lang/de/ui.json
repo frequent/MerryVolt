@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "application-name": "Volt Xmas Calendar",
+    "description": "One proposition from our Amsterdam Declaration for the European Elections every day until Christmas.",
+    "og:title": "Volt Xmas Calendar",
+    "og:site_name": "Volt Xmas Calendar",
+    "og:description": "One proposition from our Amsterdam Declaration for the European Elections every day until Christmas.",
+    "og:image": "https://softinst73904.host.vifib.net/xmas/img/volt_eu_snow.png",
+    "twitter:title": "Volt Xmas Calendar",
+    "twitter:description": "One proposition from our Amsterdam Declaration for the European Elections every day until Christmas.",
+    "twitter:image": "https://softinst73904.host.vifib.net/xmas/img/volt_eu_snow.png",
+    "share_twitter_quote": "Check out the Volt calendar",
+    "share_twitter_hashtags": ["VoteVolt"],
+    "share_facebook_quote": "Check out the Volt Xmas Calendar - today's proposition: Demandeurs d’asile et réfugiés",
+    "share_facebook_hashtag": "VoteVolt"
+  },
+  "What?": "Was?",
+  "Why?": "Wieso?",
+  "How?": "Wie?",
+  "Share this proposition:": "Diesen Programmpunkt teilen:",
+  "Deutschland": "Deutschland",
+  "France": "Frankreich",
+  "United Kingdom": "Großbritannien",
+  "Political Program": "Politisches Programm",
+  "Founded after the vote for Brexit": "Volt wurde nach der Brexitabstimmung gegründet und est un mouvement pan-européen, participatif et progressiste. Nous sommes actifs dans 32 pays, avons enregistré des partis politiques dans treize pays et voulons être la voix de tous ceux qui croient en la nécessité d'une Europe plus forte, plus démocratique et plus transparente.",
+  "We want to present our program": "Wir wollen unser Programm pour les européennes, la Déclaration d'Amsterdam, créée par les bénévoles de Volt et acceptée par l'Assemblée Générale avec ce calendrier. Une proposition par jour jusqu'à Noel.",
+  "Follow the calendar, discuss proposals": "Verfolgen Sie den Kalender, diskutieren Sie des propositions avec nous sur Facebook ou rejoignez-nous pour aider sur des questions nationales et locales et pour préparez-nous pour les prochaines élections",
+  "https://www.volteuropa.org/": "https://www.voltdeutschland.org",
+  "Christmas Calendar": "Weihnachtskalender"
+}

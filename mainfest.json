@@ -2,8 +2,8 @@
   "manifest_version": 1,
   "version": "0.0.1",
   "name": "Volt Xmas Calendar",
-  "short_name": "Volt Xmas",
-  "description": "Introductng a proposition from our Political Program for the European Parliament Elections every day until Christmas.",
+  "short_name": "Volt Calendar",
+  "description": "One proposition from our Amsterdam Declaration for the European Elections every day until Christmas.",
   "default_locale": "en",
   "icons": [
         {

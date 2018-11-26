@@ -19,46 +19,47 @@
       <li class="mdl-tabs__content-item"><strong>{paragraph_lead}</strong>{paragraph_text}</li>
     </script>
 
-    <script id="content_template" type="text/x-supplant">
-      <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-        <div class="mdl-tabs__tab-bar">
-          <a href="#what-panel" data-i18n="What?" class="mdl-tabs__tab is-active">What?</a>
-          <a href="#why-panel" data-i18n="Why?" class="mdl-tabs__tab">Why?</a>
-          <a href="#how-panel" data-i18n="How?" class="mdl-tabs__tab">How?</a>
-        </div>
-
-        <div class="mdl-tabs__panel is-active" id="what-panel">
-          <h3 class="mdl-tabs__content-header">{what_subheader}</h3>
-          <ol class="mdl-tabs__content-list">{what_content}</ol>
-        </div>
-        <div class="mdl-tabs__panel" id="why-panel">
-          <p class="mdl-tabs__content-paragraph">because</p>
-        </div>
-        <div class="mdl-tabs__panel" id="how-panel">
-          <p class="mdl-tabs__content-paragraph">by donig</p>
-        </div>
-      </div>
+    <script id="what_template" type="text/x-supplant">
+      <h3 class="mdl-tabs__content-header">{topic}</h3>
+      <ol class="mdl-tabs__content-list">{what_content}</ol>
+    </script>
+    <script id="why_template" type="text/x-supplant">
+      <ol class="mdl-tabs__content-paragraph">{why_content}</ol>
+    </script>
+    <script id="how_template" type="text/x-supplant">
+      <ol class="mdl-tabs__content-paragraph">{how_content}</ol>
     </script>
   </head>
   <body>
 
     <div class="mdl-dialog volt-dialog">
-      <div class="mdl-dialog__content volt-dialog-content"></div>
-      <div class="mdl-dialog__actions volt-dialog-actions">
-        <form name="volt-dialog-close" class="volt-dialog-action-form volt-dialog-close-form">
-          <button type="submit" class="mdl-button volt-dialog-close mdl-button--fab"><i class="material-icons">close</i></button>
-        </form>
-        <span data-i18n="Share the Volt Calendar" class="volt-dialog__action-share">Share the Volt Calendar</span>
-        <form name="volt-share-facebook" class="volt-dialog-action-form">
-          <button type="submit" class="mdl-button volt-dialog-share-fb">
-            <i class="fab fa-facebook"></i>
-          </button>
-        </form>
-        <form name="volt-share-twitter" class="volt-dialog-action-form">
-          <button type="submit" class="mdl-button volt-dialog-share-tw">
-            <i class="fab fa-twitter"></i>
-          </button>
-        </form>
+      <div class="mdl-dialog__content volt-dialog-content">
+        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect volt-dialog-content-container">
+          <div class="mdl-tabs__tab-bar stale">
+            <a href="#what-panel" data-i18n="What?" class="mdl-tabs__tab is-active">What?</a>
+            <a href="#why-panel" data-i18n="Why?" class="mdl-tabs__tab">Why?</a>
+            <a href="#how-panel" data-i18n="How?" class="mdl-tabs__tab">How?</a>
+          </div>
+          <div class="mdl-tabs__panel is-active volt-what-content" id="what-panel"></div>
+          <div class="mdl-tabs__panel volt-why-content" id="why-panel"></div>
+          <div class="mdl-tabs__panel volt-how-content" id="how-panel"></div>
+          <div class="mdl-dialog__actions volt-dialog-actions stale">
+            <form name="volt-dialog-close" class="volt-dialog-action-form volt-dialog-close-form">
+              <button type="submit" class="mdl-button volt-dialog-close mdl-button--fab"><i class="material-icons">close</i></button>
+            </form>
+            <span data-i18n="Share this proposition:" class="volt-dialog__action-share">Share this proposition:</span>
+            <form name="volt-share-facebook" class="volt-dialog-action-form">
+              <button type="submit" class="mdl-button volt-dialog-share-fb">
+                <i class="fab fa-facebook"></i>
+              </button>
+            </form>
+            <form name="volt-share-twitter" class="volt-dialog-action-form">
+              <button type="submit" class="mdl-button volt-dialog-share-tw">
+                <i class="fab fa-twitter"></i>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -70,7 +71,36 @@
               <img class="volt-home-icon" src="img/volt.min.png" alt="VoltEuropa" />
             </button>
           </form>
+          <h1 class="volt-site-header" data-i18n="Political Program">Political Program</h1>
           <div class="mdl-layout-spacer"></div>
+          <!--form name="frube-open-menu-->
+          <button id="volt-open-menu" class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">language</i>
+          </button>
+          <!--/form-->
+          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu" for="volt-open-menu">
+            <li class="mdl-menu__item mdl-menu__item--full-bleed-divider volt-custom-menu-action">
+              <i class="volt-lang volt-lang_en"></i>
+              <form name="volt-select-language" class="volt-select-language">
+                <input type="hidden" name="volt_language" value="en" />
+                <button type="submit" class="mdl-button mdl-js-button" data-i18n="United Kingdom">United Kingdom</button>
+              </form>
+            </li>
+            <li class="mdl-menu__item mdl-menu__item--full-bleed-divider volt-custom-menu-action ">
+              <i class="volt-lang volt-lang_de"></i>
+              <form name="volt-select-language" class="volt-select-language">
+                <input type="hidden" name="volt_language" value="de" />
+                <button type="submit" class="mdl-button mdl-js-button" data-i18n="Deutschland">Germany</button>
+              </form>
+            </li>
+            <li class="mdl-menu__item mdl-menu__item--full-bleed-divider volt-custom-menu-action ">
+              <i class="volt-lang volt-lang_fr"></i>
+              <form name="volt-select-language" class="volt-select-language">
+                <input type="hidden" name="volt_language" value="fr" />
+                <button type="submit" class="mdl-button mdl-js-button" data-i18n="France">France</button>
+              </form>
+            </li>
+          </ul>
         </div>
       </header>
       <main class="volt-page-content mdl-layout__content">
@@ -94,8 +124,14 @@
           <input type="radio" name="xmas" class="xmas-door_clear xmas-input" value="0"/>
         </label>
         <section class="grid-1">
-          <div class="title"></div>
-          <div class="day-1">
+          <div class="volt-introductory-text title">
+            <h2 class="volt-introductory-header" data-i18n="Christmas Calendar">Calendrier de Noel</h2>
+            <p class="volt-introductory-paragraph" data-i18n="Founded after the vote for Brexit">Fondée après le vote du Brexit, Volt est un mouvement pan-européen, participatif et progressiste. Nous sommes actifs dans 32 pays, avons enregistré des partis politiques dans treize pays et voulons être la voix de tous ceux qui croient en la nécessité d'une Europe plus forte, plus démocratique et plus transparente.</p>
+            <p class="volt-introductory-paragraph" data-i18n="We want to present our program">Nous voulons présenter notre programme pour les européennes, la Déclaration d'Amsterdam, créée par les bénévoles de Volt et acceptée par l'Assemblée Générale avec ce calendrier. Une proposition par jour jusqu'à Noel.</p>
+            <p class="volt-introductory-paragraph" data-i18n="Follow the calendar, discuss proposals">Suivez le calendrier, discutez des propositions avec nous sur Facebook ou rejoignez-nous pour aider sur des questions nationales et locales et pour préparez-nous pour les prochaines élections</p>
+            <b class="volt-introductry-hash">#VoteVolt</b>&nbsp;&nbsp;&nbsp;<a data-i18n="https://www.volteuropa.org/" class="volt-introductory-url" href="https://www.volteuropa.org/">www.voltfrance.org</a>
+          </div>
+          <div class="day-1 xmas-day">
             <label class="xmas-door_frame">
               <input type="radio" name="xmas" value="1" class="xmas-input" >
                 <div class="xmas-door">
@@ -104,7 +140,7 @@
               </input>
             </label>
           </div>
-          <div class="day-2">
+          <div class="day-2 xmas-day">
             <label class="xmas-door_frame">
               <input type="radio" name="xmas" value="2" class="xmas-input" >
                 <div class="xmas-door">
@@ -113,7 +149,7 @@
               </input>
             </label>
           </div>
-          <div class="day-3">
+          <div class="day-3 xmas-day">
             <label class="xmas-door_frame">
               <input type="radio" name="xmas" value="3" class="xmas-input" >
                 <div class="xmas-door">
@@ -122,8 +158,8 @@
               </input>
             </label>
           </div>
-          <div class="day-4">
-            <label class="xmas-door_frame">
+          <div class="day-4 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="4" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">4</h2>
@@ -131,8 +167,8 @@
               </input>
             </label>
           </div>
-          <div class="day-5">
-            <label class="xmas-door_frame">
+          <div class="day-5 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="5" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">5</h2>
@@ -140,8 +176,8 @@
               </input>
             </label>
           </div>
-          <div class="day-6">
-            <label class="xmas-door_frame">
+          <div class="day-6 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="6" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">6</h2>
@@ -149,8 +185,8 @@
               </input>
             </label>
           </div>
-          <div class="day-7">
-            <label class="xmas-door_frame">
+          <div class="day-7 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="7" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">7</h2>
@@ -158,8 +194,8 @@
               </input>
             </label>
           </div>
-          <div class="day-8">
-            <label class="xmas-door_frame">
+          <div class="day-8 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="8" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">8</h2>
@@ -167,8 +203,8 @@
               </input>
             </label>
           </div>
-          <div class="day-9">
-            <label class="xmas-door_frame">
+          <div class="day-9 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="9" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">9</h2>
@@ -176,8 +212,8 @@
               </input>
             </label>
           </div>
-          <div class="day-10">
-            <label class="xmas-door_frame">
+          <div class="day-10 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="10" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">10</h2>
@@ -185,8 +221,8 @@
               </input>
             </label>
           </div>
-          <div class="day-11">
-            <label class="xmas-door_frame">
+          <div class="day-11 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="11" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">11</h2>
@@ -194,8 +230,8 @@
               </input>
             </label>
           </div>
-          <div class="day-12">
-            <label class="xmas-door_frame">
+          <div class="day-12 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="12" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">12</h2>
@@ -203,8 +239,8 @@
               </input>
             </label>
           </div>
-          <div class="day-13">
-            <label class="xmas-door_frame">
+          <div class="day-13 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="13" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">13</h2>
@@ -212,8 +248,8 @@
               </input>
             </label>
           </div>
-          <div class="day-14">
-            <label class="xmas-door_frame">
+          <div class="day-14 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="14" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">14</h2>
@@ -221,8 +257,8 @@
               </input>
             </label>
           </div>
-          <div class="day-15">
-            <label class="xmas-door_frame">
+          <div class="day-15 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="15" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">15</h2>
@@ -230,8 +266,8 @@
               </input>
             </label>
           </div>
-          <div class="day-16">
-            <label class="xmas-door_frame">
+          <div class="day-16 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="16" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">16</h2>
@@ -239,8 +275,8 @@
               </input>
             </label>
           </div>
-          <div class="day-17">
-            <label class="xmas-door_frame">
+          <div class="day-17 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="17" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">17</h2>
@@ -248,8 +284,8 @@
               </input>
             </label>
           </div>
-          <div class="day-18">
-            <label class="xmas-door_frame">
+          <div class="day-18 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="18" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">18</h2>
@@ -257,8 +293,8 @@
               </input>
             </label>
           </div>
-          <div class="day-19">
-            <label class="xmas-door_frame">
+          <div class="day-19 xmas-day">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="19" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date">19</h2>
@@ -266,7 +302,7 @@
               </input>
             </label>
           </div>
-          <div class="day-20">
+          <div class="day-20 xmas-day">
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="20" class="xmas-input" >
                 <div class="xmas-door">
@@ -275,7 +311,7 @@
               </input>
             </label>
           </div>
-          <div class="day-21">
+          <div class="day-21 xmas-day">
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="21" class="xmas-input" >
                 <div class="xmas-door">
@@ -284,7 +320,7 @@
               </input>
             </label>
           </div>
-          <div class="day-22">
+          <div class="day-22 xmas-day">
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="22" class="xmas-input" >
                 <div class="xmas-door">
@@ -293,7 +329,7 @@
               </input>
             </label>
           </div>
-          <div class="day-23">
+          <div class="day-23 xmas-day">
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="23" class="xmas-input" >
                 <div class="xmas-door">
@@ -302,7 +338,7 @@
               </input>
             </label>
           </div>
-          <div class="day-24">
+          <div class="day-24 xmas-day">
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="24" class="xmas-input" >
                 <div class="xmas-door">
@@ -316,7 +352,7 @@
     </div>
 
     <div data-gadget-url="gadget_jio.html"
-      data-gadget-scope="volt_github_jio"
+      data-gadget-scope="volt_jio"
       data-gadget-sandbox="public">
     </div>
   </body>

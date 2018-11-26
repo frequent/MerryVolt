@@ -125,6 +125,24 @@
   height: 32px;
   width: auto;
 }
+.volt-site-header {
+  font-family: Ubuntu;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+@media only screen and (max-width: 32em) {
+  .volt-site-header {
+    font-size: 1.25em;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .mdl-layout__header-row {
+    padding-left: 0;
+  }
+}
 
 /* =============================== SNOW ===================================== */
 /* thx: http://standardista.com/snow/ */
@@ -552,7 +570,7 @@ background-image:
   display: grid;
   width: 96%;
   max-width: 56em;
-  margin: 2% auto;
+  margin: 0 auto 2%;
   grid-template-rows: auto;
   grid-gap: 1.5em;
   grid-template-columns: repeat(6, 1fr);
@@ -595,7 +613,9 @@ background-image:
                           "d8     d21";
   }
 }
-
+.xmas-day {
+  max-height: 9em;
+}
 .title {
   grid-area: t;
 }
@@ -670,6 +690,7 @@ background-image:
 }
 .day-24 {
   grid-area: d24;
+  max-height: initial;
 }
 
 @-webkit-keyframes shake {
@@ -756,8 +777,26 @@ background-image:
   cursor: pointer;
   transition: all .2s ease-out;
 }
-.is-locked .xmas-door {
+.is-locked,
+.is-locked .xmas-door,
+.is-locked .xmas-input:checked + .xmas-door {
   cursor: not-allowed;
+}
+.is-locked:before {
+    font-family: "Material Icons";
+    content: "\E899";
+    position: absolute;
+    height: 24px;
+    top: 55%;
+    z-index: 1;
+    font-size: 2em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    text-indent: 2.5em;
+    font-weight: bold;
+    color: #612095;
 }
 .is-locked .xmas-input:checked + .xmas-door {
   -webkit-transform-origin: 50% 0;
@@ -895,10 +934,16 @@ background-image:
   font-size: 80px;
   line-height: 3em;
 }
+.day-24 .is-locked:before {
+  text-indent: 3.5em;
+}
 @media only screen and (max-width: 48em) {
   .day-24 .xmas-door_date {
     font-size: 45px;
     line-height: 2em;
+  }
+  .day-24 .is-locked:before {
+    text-indent: 2.5em;
   }
 }
 .xmas-door_unset {
@@ -1090,7 +1135,7 @@ background-image:
 @media only screen and (max-width: 48em) {
   .mdl-tabs__content-item,
   .mdl-tabs__content-paragraph {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }  
 }
 .mdl-tabs__content-paragraph {
@@ -1112,7 +1157,10 @@ background-image:
 }
 @media only screen and (max-width: 32em) {
   .mdl-tabs__tab {
-    font-size: 1.25em;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
   }
 }
 .volt-dialog-close-form {
@@ -1129,6 +1177,15 @@ background-image:
 .volt-dialog-action-form .mdl-button {
   height: 56px;
 }
+@media only screen and (max-width: 48em) {
+  .volt-dialog-action-form .mdl-button {
+    height: 36px;
+    width: 36px;
+    min-width: 36px;
+    right: -.75em;
+    top: -.75em;
+  }
+}
 .volt-dialog__action-share {
   height: 48px;
   font-family: Ubuntu;
@@ -1141,5 +1198,103 @@ background-image:
   .mdl-dialog__actions > .volt-dialog__action-share,
   .mdl-dialog__actions > .volt-dialog-action-form {
     margin-right: 0;  
+  }
+  .volt-dialog__action-share {
+    display: block;
+    margin-left: auto;
+    text-align: left;
+    width: auto;
+    margin-top: -2em;
+    padding-bottom: .5em;
+  }
+  .volt-dialog__action-share ~ .volt-dialog-action-form {
+    float: left;
+  }
+  .volt-dialog__action-share ~ .volt-dialog-action-form .mdl-button {
+    width: 52px;
+  }
+}
+/* ========================== TRANSLATION =================================== */
+/* https://www.flag-sprites.com/ select flags, check network tab for image */
+.volt-select-language .mdl-menu__container {
+  background: #fff;
+}
+.volt-lang {
+  background: url(img/flags.min.png) no-repeat;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: .5em;
+  left: .25em;
+  display: block;
+}
+
+.volt-lang_en {
+  background-position: -32px -64px;
+}
+.volt-lang_de {
+  background-position: -64px -32px;
+}
+.volt-lang_fr {
+  background-position: 0 -64px;
+}
+.volt-custom-menu-action {
+  padding: 0;
+}
+.volt-custom-menu-action:after,
+.volt-custom-menu-action:before {
+  content: none;
+}
+.volt-custom-menu-action:hover {
+  background-color: transparent;
+}
+.volt-custom-menu-action .mdl-button {
+  font-weight: inherit;
+  text-shadow: none;
+  text-transform: none;
+  display: inline-block;
+  height: 48px;
+  font-family: Ubuntu;
+  color: #612095;
+  width: 100%;
+  padding-left: 3em;
+  padding-right: 1em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.volt-introductory-url {
+  color: #fff;
+  float: right;
+  padding: 2px 0 0 0;
+}
+
+.volt-introductry-hash {
+  font-style: italic;
+  font-size: 1.5em;
+}
+.volt-introductory-text {
+  color: #fff;
+  font-family: Ubuntu;
+  padding: 0 1em;
+}
+.volt-introductory-paragraph {
+  font-size: 1.25em;
+}
+.volt-introductory-header {
+  color: #fff;
+  font-family: Ubuntu;
+  text-align: center;
+  margin-top: -0.5em;
+  font-size: 2.5em;
+}
+@media only screen and (max-width: 48em) {
+  .volt-introductory-header {
+    margin-top: -1em;
+  }
+}
+@media only screen and (max-width: 32em) {
+  .volt-introductory-header {
+    margin-top: -2em;
   }
 }

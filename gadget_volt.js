@@ -3,29 +3,6 @@
 (function (window, rJS, RSVP) {
     "use strict";
 
-  // dummy data
-  var FAKE_RESPONSE = {
-    "topic": "Demandeurs d’asile et réfugiés",
-    "what": [{
-      "lead": "Gérer les flux de réfugiés en provenance de l'extérieur de l'UE",
-      "text": ", par la mise en place d'un système européen de gestion des réfugiés. Le système de Dublin doit être réformé et complété par un système de règlement qui prévoit des pénalités et des sanctions à l'encontre des États refusant de s'acquitter de leurs responsabilités."
-    }, {
-      "lead": "Rendre le système d'asile équitable, efficace et rapide",
-      "text": ", en publiant des lignes directrices de l'UE qui garantissent des procédures d'asile plus courtes et prévoient des mesures sociales, juridiques, et un soutien psychologique."
-    }, {
-      "lead": "Assurer une intégration réussie et bénéfique à l'économie.",
-      "text": "Les demandeurs d'asile doivent pouvoir entrer sur le marché du travail dès le premier jour, et leurs compétences doivent être plus facilement reconnues. De plus, une formation linguistique doit être offerte à tous les demandeurs d'asile."
-    }, {
-      "lead": "Faire respecter les droits des demandeurs d'asile et des réfugiés,par la surveillance et la sanction des Etats membres qui violent ces droits",
-      "text": ", par exemple en détenant des demandeurs d'asile lorsque cela n'est pas nécessaire et dans des conditions inhumaines."
-    }, {
-      "lead": "Protéger ceux qui en ont besoin, en classant les migrants victimes de la famine et les migrants climatiques dans la catégorie des réfugiés",
-      "text": " en vertu du droit européen et en renforçant l'utilisation de corridors humanitaires."
-    }],
-    "why": [],
-    "how": []
-  }; 
-
   /////////////////////////////
   // parameters
   /////////////////////////////
@@ -33,12 +10,19 @@
   var KLASS = rJS(window);
   var CANVAS = "canvas";
   var ARR = [];
+  var BLANK = "_blank";
   var NAME = "name";
+  var VOLT = "volt_jio";
   var DIALOG_ACTIVE = "volt-dialog-active";
   var LOCATION = window.location;
   var DOCUMENT = window.document;
   var INTERSECTION_OBSERVER = window.IntersectionObserver;
   var TEMPLATE_PARSER = /\{([^{}]*)\}/g;
+  var POPPER = "width=600,height=480,resizable=yes,scrollbars=yes,status=yes";
+  var SOCIAL_MEDIA_CONFIG = {
+    "facebook": "https://www.facebook.com/sharer.php?u={url}",
+    "twitter": "https://twitter.com/intent/tweet?url={url}&text={text}&hashtags={tag_list}"
+  };
 
   /////////////////////////////
   // methods
@@ -94,29 +78,50 @@
     }).join("");
   }
 
+  function getLang(nav) {
+    return (nav.languages ? nav.languages[0] : (nav.language || nav.userLanguage));
+  }
+
+  function getConfig(my_language) {
+    return {
+      "type": "volt_storage",
+      "repo": "MerryVolt",
+      "path": "lang/" + my_language,
+      "__debug": "https://softinst73904.host.vifib.net/xmas/lang/" + my_language + "/debug.json"
+    };
+  }
+
   KLASS
 
     /////////////////////////////
     // state
     /////////////////////////////
     .setState({
-
+      "locale": getLang(window.navigator).substring(0, 2)
     })
 
     /////////////////////////////
     // ready
     /////////////////////////////
     .ready(function (gadget) {
+      var element = gadget.element;
       gadget.property_dict = {
-        "content": getElem(gadget.element, ".volt-dialog-content"),
+        "what": getElem(element, ".volt-what-content"),
+        "why": getElem(element, ".volt-why-content"),
+        "how": getElem(element, ".volt-how-content"),
         "unset": getElem(gadget.element, ".xmas-door_clear"),
-        "dialog": getElem(gadget.element, ".volt-dialog")
+        "dialog": getElem(gadget.element, ".volt-dialog"),
+
+        // yaya, should be localstorage caling repair to sync
+        "url_dict": {},
+        "content_dict": {}
       };
     })
 
     /////////////////////////////
     // acquired methods
     /////////////////////////////
+    .declareAcquiredMethod("translateDom", "translateDom")
 
     /////////////////////////////
     // published methods
@@ -125,71 +130,91 @@
     /////////////////////////////
     // declared methods
     /////////////////////////////
-    /*
-    https://stackoverflow.com/questions/26547292/how-create-a-facebook-share-button-without-sdk-or-custom-app-id
-    .declareMethod("shareUrl", function (my_url, my_name, my_config) {
-      var gadget = this;
-      var popup;
-      var popup_resolver;
-      var resolver = new Promise(function (resolve, reject) {
-        popup_resolver = function resolver(href) {
-          return gadget.session_getAttachment(SLASH, STATE, {"format": "text"})
-            .push(function (state) {
-              var test = getUrlParameter("state", href);
 
-              // already logged in
-              if (test && state === test) {
-                return gadget.session_removeAttachment(SLASH, STATE)
-                  .push(function () {
-                    return resolve({
-                      "access_token": getUrlParameter("access_token", href),
-                      "uid": getUrlParameter("uid", href),
-                      "type": getUrlParameter("token_type", href)
-                    });
-                  });
-              } else {
-                return reject("forbidden");
-              }
-            });
-        };
-        popup = window.open(my_url, my_name, my_config);
-        popup.opener.popup_resolver = popup_resolver;
-        return window.promiseEventListener(popup, "load", true);
-      });
-
-      // Note: no longer RSVP.any with a timeout. if popup throws, we're stuck.
-      return new RSVP.Queue()
-        .push(function () {
-          return resolver;
-        })
-        .push(function (my_ouath_dict) {
-          popup.close();
-          if (my_ouath_dict) {
-            return my_ouath_dict;
-          }
-          throw {"code": 408};
+    // ---------------------- JIO bridge ---------------------------------------
+    .declareMethod("route", function (my_scope, my_call, my_p1, my_p2, my_p3) {
+      return this.getDeclaredGadget(my_scope)
+        .push(function (my_gadget) {
+          return my_gadget[my_call](my_p1, my_p2, my_p3);
         });
     })
-    */
+    .declareMethod("volt_create", function (my_option_dict) {
+      return this.route(VOLT, "createJIO", my_option_dict);
+    })
+    .declareMethod("volt_get", function (my_id) {
+      return this.route(VOLT, "get", my_id);
+    })
+    .declareMethod("volt_allDocs", function () {
+      return this.route(VOLT, "allDocs");
+    })
+
+   .declareMethod("stateChange", function (delta) {
+      var gadget = this;
+      var state = gadget.state;
+      if (delta.hasOwnProperty("locale")) {
+        state.locale = delta.locale;
+      }
+   })
+
+    // thx: https://css-tricks.com/simple-social-sharing-links/
+    // twitter prevalidate url: https://cards-dev.twitter.com/validator
+    // https://developers.facebook.com/docs/sharing/best-practices/
+    .declareMethod("shareUrl", function (my_scm) {
+      var popup;
+      var is_mobile = window.matchMedia("only screen and (max-width: 48em)");
+      var popup_resolver;
+
+      // lots of bells and whistles for trying to stay on the page, use this
+      // with localstorage is we want to keep state or login on social media
+      var resolver = new Promise(function (resolve, reject) {
+        popup_resolver = function resolver(href) {
+          return resolve({});
+        };
+      });
+
+      popup = window.open(
+        SOCIAL_MEDIA_CONFIG[my_scm].supplant({
+          "url": encodeURIComponent(LOCATION.href),
+          "text":"heya",
+          "tag_list": "VoteVolt"
+        }),
+        is_mobile.matches ? BLANK : STR,
+        is_mobile.matches ? null : POPPER
+      );
+      popup.opener.popup_resolver = popup_resolver;
+      return window.promiseEventListener(popup, "load", true);
+    })
+
     .declareMethod("showDialog", function (my_event) {
       var gadget = this;
-      var dialog = gadget.property_dict.dialog;
+      var dict = gadget.property_dict;
+      var dialog = dict.dialog;
+      var target = dict.url_dict[my_event.target.value];
+
       if (my_event.target.parentElement.classList.contains("is-locked")) {
+        return;
+      }
+      if (!target || target.indexOf("http") === -1) {
         return;
       }
       return new RSVP.Queue()
         .push(function () {
-          return FAKE_RESPONSE;
+          return gadget.volt_get(target);
         })
         .push(function (my_data) {
-          setDom(
-            gadget.property_dict.content,
-            getTemplate(KLASS, "content_template").supplant({
-              "what_subheader": my_data.topic,
-              "what_content": buildParagraphs(my_data.what)
-            }),
-            true
-          );
+
+          // so much hoopla to translate the tab header in the template... sigh
+          setDom(dict.what, getTemplate(KLASS, "what_template").supplant({
+            "topic": my_data.title,
+            "what_content": buildParagraphs(my_data.what)
+          }), true);
+          setDom(dict.why, getTemplate(KLASS, "why_template").supplant({
+            "why_content": buildParagraphs(my_data.why)
+          }), true);
+          setDom(dict.how, getTemplate(KLASS, "how_template").supplant({
+            "how_content": buildParagraphs(my_data.how)
+          }), true);
+
           window.componentHandler.upgradeElements(dialog);
           return gadget.handleDialog();
         });
@@ -216,12 +241,69 @@
       return;
     })
 
+    .declareMethod("fetchTranslationAndUpdateDom", function (my_language) {
+      var gadget = this;
+      var url_dict = gadget.property_dict.url_dict;
+      return new RSVP.Queue()
+        .push(function () {
+          return gadget.volt_get(url_dict.ui);
+        })
+        .push(function (data) {
+          return gadget.translateDom(data);
+        });
+    })
+
+    .declareMethod("updateStorage", function (my_language) {
+      var gadget = this;
+      if (my_language === gadget.state.locale) {
+        return;
+      }
+      return new RSVP.Queue()
+        .push(function () {
+          return gadget.stateChange({"locale": my_language});
+        })
+        .push(function () {
+          return gadget.volt_create(getConfig(my_language));
+        })
+        .push(function () {
+          return gadget.buildCalendarLookupDict();
+        })
+        .push(function () {
+          return gadget.fetchTranslationAndUpdateDom();
+        });
+    })
+
+    .declareMethod("buildCalendarLookupDict", function () {
+      var gadget = this;
+      var dict = gadget.property_dict;
+      return new RSVP.Queue()
+        .push(function () {
+          return gadget.volt_allDocs();
+        })
+        .push(function (my_file_list) {
+          my_file_list.data.rows.map(function (row) {
+            dict.url_dict[row.id.split("/").pop().replace(".json", "")] = row.id;
+          });
+        });
+    })
+
     // -------------------.--- Render ------------------------------------------
     .declareMethod("render", function (my_option_dict) {
       var gadget = this;
       var dict = gadget.property_dict;
+
       window.componentHandler.upgradeDom();
       mergeDict(dict, my_option_dict);
+      return new RSVP.Queue()
+        .push(function () {
+          return gadget.volt_create(getConfig(gadget.state.locale));
+        })
+        .push(function () {
+          return gadget.buildCalendarLookupDict();
+        })
+        .push(function () {
+          return gadget.fetchTranslationAndUpdateDom(gadget.state.locale);
+        });
     })
 
 
@@ -233,7 +315,7 @@
     // declared service
     /////////////////////////////
     .declareService(function () {
-      window.document.body.classList.remove("volt-splash");      
+      DOCUMENT.body.classList.remove("volt-splash");      
     })
 
     /////////////////////////////
@@ -249,9 +331,13 @@
         case "volt-dialog-close":
           return this.handleDialog();
         case "volt-share-facebook":
-          return this.shareUrl("fb");
+          return this.shareUrl("facebook");
         case "volt-share-twitter":
           return this.shareUrl("twitter");
+        case "volt-share-linkedin":
+          return this.shareUrl("linkedin");
+        case "volt-select-language":
+          return this.updateStorage(event.target.volt_language.value);
       }
     })
 
