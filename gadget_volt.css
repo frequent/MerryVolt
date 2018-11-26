@@ -1298,3 +1298,18 @@ background-image:
     margin-top: -2em;
   }
 }
+.volt-error {
+  font-size: 1.25em;
+  color: #fff;
+  font-family: Ubuntu;
+  margin: 2em;
+  text-align: center;
+}
+.volt-error-link {
+  display: block;
+  text-align: center;
+  font-family: Ubuntu;
+  color: #fff;
+  font-size: 1.25em;
+}
+}
