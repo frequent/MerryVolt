@@ -12580,8 +12580,8 @@ return new Parser;
 
     this._href = 'https://api.github.com/repos';
     this._user = 'VoltEuropa';
-    this._path = spec.repo + '/' + spec.path;
-    this._url = [this._href, this._user, this._path, '?ref=master'].join('/');
+    this._path = spec.repo + '/contents/' + spec.path;
+    this._url = [this._href, this._user, this._path, '?ref=gh-pages'].join('/');
     this.__debug = spec.__debug;
   }
 
