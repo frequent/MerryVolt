@@ -281,6 +281,9 @@
           return gadget.volt_allDocs();
         })
         .push(function (my_file_list) {
+          if (my_file_list.data.total_rows === 0) {
+            return gadget.updateStorage("en");
+          }
           my_file_list.data.rows.map(function (row) {
             dict.url_dict[row.id.split("/").pop().replace(".json", "")] = row.id;
           });

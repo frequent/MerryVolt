@@ -12633,6 +12633,12 @@ return new Parser;
           }
         }
         return result_list;
+      })
+      .push(undefined, function (response) {
+        if (response.target.status === 404) {
+          return [];
+        }
+        throw error;
       });
   };
 

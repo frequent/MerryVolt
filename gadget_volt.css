@@ -116,10 +116,8 @@
   background-color: #612095;
 }
 /* ============================= HEADER ====================================== */
-@media only screen and (max-width: 48em) {
-  .mdl-layout__header-row {
-    padding: 0 1em 0 1em;
-  }
+.volt-home-button {
+  margin-right: 1em;
 }
 .volt-home-icon {
   height: 32px;
@@ -140,7 +138,7 @@
 }
 @media only screen and (max-width: 48em) {
   .mdl-layout__header-row {
-    padding-left: 0;
+    padding: 0 1em 0 1em;
   }
 }
 
@@ -579,8 +577,11 @@ background-image:
                           "t      t       t       d19     d9      d13"
                           "d6     d1      d24     d24     d21     d20"
                           "d17    d18     d24     d24     d5      d22"
-                          "d3     d23     d16     d14     d10     d15";
+                          "d3     d23     d16     d14     d10     d15"
+                          "x      x       x       x       x       d25"
+                          "d26    d27     d28     d29     d30     d31";
 }
+/* d25 d26 d27 d28 d29 d30 d31 */
 @media only screen and (max-width: 48em) {
   .grid-1 {
     grid-template-columns: repeat(3, 1fr);
@@ -592,7 +593,10 @@ background-image:
                           "d10    d11     d18"
                           "d13    d3      d15"
                           "d6     d17     d8"
-                          "d19    d24     d21";
+                          "d19    d24     d21"
+                          "x      x       d25"
+                          "d26    d27     d28"
+                          "d29    d30     d31";
   }
 }
 @media only screen and (max-width: 25em) {
@@ -610,11 +614,19 @@ background-image:
                           "d12    d4"
                           "d16    d9"
                           "d18    d15"
-                          "d8     d21";
+                          "d8     d21"
+                          "x      d25"
+                          "d26    d27"
+                          "d28    d29"
+                          "d30    d31";
   }
 }
 .xmas-day {
   max-height: 9em;
+}
+.prolong {
+  grid-area: x;
+  text-align: center;
 }
 .title {
   grid-area: t;
@@ -691,6 +703,27 @@ background-image:
 .day-24 {
   grid-area: d24;
   max-height: initial;
+}
+.day-25 {
+  grid-area: d25;
+}
+.day-26 {
+  grid-area: d26;
+}
+.day-27 {
+  grid-area: d27;
+}
+.day-28 {
+  grid-area: d28;
+}
+.day-29 {
+  grid-area: d29;
+}
+.day-30 {
+  grid-area: d30;
+}
+.day-31 {
+  grid-area: d31;
 }
 
 @-webkit-keyframes shake {
@@ -808,20 +841,31 @@ background-image:
   -moz-animation: shake .7s;
 	animation: shake .7s;
 }
+.volt-spoiler {
+  font-size: .25em;
+  display: none;
+  line-height: 1em;
+  padding-top: 3em;
+}
+.xmas-door_frame:hover .volt-count {
+  display: none;
+}
+.xmas-door_frame:hover .volt-spoiler {
+  display: block;
+}
 .xmas-door_frame:not(.is-locked):hover {
   z-index: 999;
 }
 .xmas-door_frame:not(.is-locked):hover .xmas-input:not(:checked) + .xmas-door {
   border-color: #fff;
 }
-.grid-1 .xmas-input {
+.grid-1 .xmas-input,
+.xmas-door_unset {
   position: absolute !important;
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
 	clip: rect(1px,1px,1px,1px);
-  /* visibility: hidden;
-     display: none XXX these breaks keydown binding*/
 }
 .xmas-door_frame {
   -webkit-perspective: 850px;
@@ -873,11 +917,8 @@ background-image:
 }
 .xmas-door_frame:not(.is-locked):hover .xmas-input:not(:checked) + .xmas-door {
   border-color: #fff;
-}.xmas-door_unset {
-  position: absolute;
-  width: 100%;
-  height: 100%;
 }
+
 .xmas-door_clear {
   display: none;
 }
@@ -945,11 +986,6 @@ background-image:
   .day-24 .is-locked:before {
     text-indent: 2.5em;
   }
-}
-.xmas-door_unset {
-  position: absolute;
-  width: 100%;
-  height: 100%;
 }
 .xmas-door_clear {
   display: none;
@@ -1265,18 +1301,33 @@ background-image:
 }
 .volt-introductory-url {
   color: #fff;
-  float: right;
+  font-size: 1.25em;
   padding: 2px 0 0 0;
+  text-align: center;
 }
-
-.volt-introductry-hash {
+.volt-introductory-bold {
   font-style: italic;
-  font-size: 1.5em;
+  color: #fff;
+  font-size: 1.25em;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 48em) {
+  .volt-introductory-bold {
+    font-size: 1.5em;
+  } 
+}
+.volt-introductory-donate {
+  float: right;
+  clear: both;
 }
 .volt-introductory-text {
   color: #fff;
   font-family: Ubuntu;
   padding: 0 1em;
+  margin: auto
+}
+.prolong .volt-introductory-paragraph {
+  padding-top: 2.5em;
 }
 .volt-introductory-paragraph {
   font-size: 1.25em;

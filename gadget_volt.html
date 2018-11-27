@@ -66,11 +66,9 @@
     <div class="volt-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="volt-header mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <form name="volt-home">
-            <button type="submit" class="volt-home-button mdl-layout-title mdl-button">
-              <img class="volt-home-icon" src="img/volt.min.png" alt="VoltEuropa" />
-            </button>
-          </form>
+          <a href="https://www.volteuropa.org" class="volt-home-button" title="https://www.volteuropa.org">
+            <img class="volt-home-icon" src="img/volt.min.png" alt="VoltEuropa" />
+          </a>
           <h1 class="volt-site-header" data-i18n="Political Program">Political Program</h1>
           <div class="mdl-layout-spacer"></div>
           <!--form name="frube-open-menu-->
@@ -129,31 +127,35 @@
             <p class="volt-introductory-paragraph" data-i18n="Founded after the vote for Brexit">Fondée après le vote du Brexit, Volt est un mouvement pan-européen, participatif et progressiste. Nous sommes actifs dans 32 pays, avons enregistré des partis politiques dans treize pays et voulons être la voix de tous ceux qui croient en la nécessité d'une Europe plus forte, plus démocratique et plus transparente.</p>
             <p class="volt-introductory-paragraph" data-i18n="We want to present our program">Nous voulons présenter notre programme pour les européennes, la Déclaration d'Amsterdam, créée par les bénévoles de Volt et acceptée par l'Assemblée Générale avec ce calendrier. Une proposition par jour jusqu'à Noel.</p>
             <p class="volt-introductory-paragraph" data-i18n="Follow the calendar, discuss proposals">Suivez le calendrier, discutez des propositions avec nous sur Facebook ou rejoignez-nous pour aider sur des questions nationales et locales et pour préparez-nous pour les prochaines élections</p>
-            <b class="volt-introductry-hash">#VoteVolt</b>&nbsp;&nbsp;&nbsp;<a data-i18n="https://www.volteuropa.org/" class="volt-introductory-url" href="https://www.volteuropa.org/">www.voltfrance.org</a>
+            <a class="volt-introductory-hash" href="https://www.volteuropa.org/"><b class="volt-introductory-bold">#VoteVolt</b></a>
+            <a class="volt-introductory-donate" href="https://www.volteuropa.org/donate"><b class="volt-introductory-bold" data-i18n="Donate">Donate</b></a>
+          </div>
+          <div class="volt-introductory-text prolong">
+            <p class="volt-introductory-paragraph" data-i18n="and since there are more propositions">and since there are more propositions, we just continue until year's end.</p>
           </div>
           <div class="day-1 xmas-day">
-            <label class="xmas-door_frame">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="1" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">1</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">1</span><span class="volt-spoiler" data-i18n="Asylum Seekers and Refugees">Demandeurs d’asile et réfugiés</span></h2>
             		</div>
               </input>
             </label>
           </div>
           <div class="day-2 xmas-day">
-            <label class="xmas-door_frame">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="2" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">2</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">2</span><span class="volt-spoiler" data-i18n="Governance">Gouvernance</span></h2>
             		</div>
               </input>
             </label>
           </div>
           <div class="day-3 xmas-day">
-            <label class="xmas-door_frame">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="3" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">3</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">3</span><span class="volt-spoiler" data-i18n="Inclusion">Inclusion</span></h2>
             		</div>
               </input>
             </label>
@@ -162,7 +164,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="4" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">4</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">4</span><span class="volt-spoiler" data-i18n="Security"></span></h2>
             		</div>
               </input>
             </label>
@@ -171,7 +173,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="5" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">5</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">5</span><span class="volt-spoiler" data-i18n="Create Jobs">Création d’emplois</span></h2>
             		</div>
               </input>
             </label>
@@ -180,7 +182,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="6" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">6</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">6</span><span class="volt-spoiler" data-i18n="Education">Education</span></h2>
             		</div>
               </input>
             </label>
@@ -189,7 +191,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="7" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">7</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">7</span><span class="volt-spoiler" data-i18n="No One Left Behind">Aucun laissé pour compte</span></h2>
             		</div>
               </input>
             </label>
@@ -198,7 +200,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="8" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">8</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">8</span><span class="volt-spoiler" data-i18n="Equality Anti Discrimination"></span></h2>
             		</div>
               </input>
             </label>
@@ -207,7 +209,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="9" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">9</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">9</span><span class="volt-spoiler" data-i18n="Deliberation">Délibération</span></h2>
             		</div>
               </input>
             </label>
@@ -216,7 +218,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="10" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">10</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">10</span><span class="volt-spoiler" data-i18n="Smart Energy">Gestion intelligente de l'énergie</span></h2>
             		</div>
               </input>
             </label>
@@ -225,7 +227,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="11" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">11</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">11</span><span class="volt-spoiler" data-i18n="Transparency">Transparence</span></h2>
             		</div>
               </input>
             </label>
@@ -234,7 +236,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="12" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">12</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">12</span><span class="volt-spoiler" data-i18n="Circular economy"></span></h2>
             		</div>
               </input>
             </label>
@@ -243,7 +245,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="13" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">13</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">13</span><span class="volt-spoiler" data-i18n="Participation">Participation</span></h2>
             		</div>
               </input>
             </label>
@@ -252,7 +254,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="14" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">14</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">14</span><span class="volt-spoiler" data-i18n="Innovation">Innovation</span></h2>
             		</div>
               </input>
             </label>
@@ -261,7 +263,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="15" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">15</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">15</span><span class="volt-spoiler" data-i18n="Sustainable agriculture"></span></h2>
             		</div>
               </input>
             </label>
@@ -270,7 +272,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="16" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">16</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">16</span><span class="volt-spoiler" data-i18n="European Parliament">Parlement européen</span></h2>
             		</div>
               </input>
             </label>
@@ -279,7 +281,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="17" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">17</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">17</span><span class="volt-spoiler" data-i18n="Public Sector">Secteur public</span></h2>
             		</div>
               </input>
             </label>
@@ -288,7 +290,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="18" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">18</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">18</span><span class="volt-spoiler" data-i18n="Corruption">Corruption</span></h2>
             		</div>
               </input>
             </label>
@@ -297,7 +299,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="19" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">19</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">19</span><span class="volt-spoiler" data-i18n="Inclusion2">Inclusion</span></h2>
             		</div>
               </input>
             </label>
@@ -306,7 +308,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="20" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">20</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">20</span><span class="volt-spoiler" data-i18n="Labour migration"></span></h2>
             		</div>
               </input>
             </label>
@@ -315,7 +317,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="21" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">21</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">21</span><span class="volt-spoiler" data-i18n="Economy and finance">Economie et finance</span></h2>
             		</div>
               </input>
             </label>
@@ -324,7 +326,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="22" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">22</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">22</span><span class="volt-spoiler" data-i18n="The Volta Programme"></span></h2>
             		</div>
               </input>
             </label>
@@ -333,7 +335,7 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="23" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">23</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">23</span><span class="volt-spoiler" data-i18n="Entrepreneurship">Entreprenariat</span></h2>
             		</div>
               </input>
             </label>
@@ -342,7 +344,70 @@
             <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="24" class="xmas-input" >
                 <div class="xmas-door">
-            			<h2 class="xmas-door_date">24</h2>
+            			<h2 class="xmas-door_date"><span class="volt-count">24</span><span class="volt-spoiler" data-i18n="Future of Work">L’avenir du travail</span></h2>
+            		</div>
+              </input>
+            </label>
+          </div>
+          <div class="day-25 xmas-day">
+            <label class="xmas-door_frame is-locked">
+              <input type="radio" name="xmas" value="25" class="xmas-input" >
+                <div class="xmas-door">
+            			<h2 class="xmas-door_date"><span class="volt-count">26</span><span class="volt-spoiler" data-i18n="Smart State">Etat Intelligent</span></h2>
+            		</div>
+              </input>
+            </label>
+          </div>
+          <div class="day-26 xmas-day">
+            <label class="xmas-door_frame is-locked">
+              <input type="radio" name="xmas" value="26" class="xmas-input" >
+                <div class="xmas-door">
+            			<h2 class="xmas-door_date"><span class="volt-count">26</span><span class="volt-spoiler" data-i18n="Economic Renaissance">Renaissance Economique</span></h2>
+            		</div>
+              </input>
+            </label>
+          </div>
+          <div class="day-27 xmas-day">
+            <label class="xmas-door_frame is-locked">
+              <input type="radio" name="xmas" value="27" class="xmas-input" >
+                <div class="xmas-door">
+            			<h2 class="xmas-door_date"><span class="volt-count">27</span><span class="volt-spoiler" data-i18n="Social Equality">Egalité Sociale</span></h2>
+            		</div>
+              </input>
+            </label>
+          </div>
+          <div class="day-28 xmas-day">
+            <label class="xmas-door_frame is-locked">
+              <input type="radio" name="xmas" value="28" class="xmas-input" >
+                <div class="xmas-door">
+            			<h2 class="xmas-door_date"><span class="volt-count">28</span><span class="volt-spoiler" data-i18n="Global Balance">Equilibre global</span></h2>
+            		</div>
+              </input>
+            </label>
+          </div>
+          <div class="day-29 xmas-day">
+            <label class="xmas-door_frame is-locked">
+              <input type="radio" name="xmas" value="29" class="xmas-input" >
+                <div class="xmas-door">
+            			<h2 class="xmas-door_date"><span class="volt-count">29</span><span class="volt-spoiler" data-i18n="Citizen Empowerment">Responsabilisation des citoyens</span></h2>
+            		</div>
+              </input>
+            </label>
+          </div>
+          <div class="day-30 xmas-day">
+            <label class="xmas-door_frame is-locked">
+              <input type="radio" name="xmas" value="30" class="xmas-input" >
+                <div class="xmas-door">
+            			<h2 class="xmas-door_date"><span class="volt-count">30</span><span class="volt-spoiler" data-i18n="EU-Reforum">Réforme de l'UE</span></h2>
+            		</div>
+              </input>
+            </label>
+          </div>
+          <div class="day-31 xmas-day">
+            <label class="xmas-door_frame is-locked">
+              <input type="radio" name="xmas" value="31" class="xmas-input" >
+                <div class="xmas-door">
+            			<h2 class="xmas-door_date"><span class="volt-count">31</span><span class="volt-spoiler" data-i18n="A Wish">Un Souhait</span></h2>
             		</div>
               </input>
             </label>

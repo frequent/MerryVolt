@@ -59,7 +59,7 @@
           var a = window.document.createElement("a");
           var body = window.document.getElementsByTagName('body')[0];
           p.classList.add("volt-error");
-          p.textContent = "Sorry, your browser does not seem to support this application :( ";
+          p.textContent = "Sorry, we messed up or your browser does not seem to support this application :( ";
           a.classList.add("volt-error-link");
           a.textContent = "www.volteuropa.org";
           a.setAttribute("href", "https://www.volteuropa.org/");
