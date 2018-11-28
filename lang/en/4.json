@@ -1,0 +1,21 @@
+{
+  "title": "Security",
+  "what": [{
+    "lead": "Boost European defense capabilities, ",
+    "text": "by establishing a European army of committed Member States, while working towards the creation of EU-wide permanent forces with a unified EU military command under civilian control."
+  }, {
+    "lead": "Strengthen European internal security, ",
+    "text": "by turning the EU’s current law enforcement agency (Europol) into a true federal-level police force and granting it authority to fight crossborder crime, terrorism and cybersecurity threats."
+  }, {
+    "lead": "Ensure the safety of the EU’s digital infrastructure,  ",
+    "text": "by making all EU software open source. This will reduce the dependency on monopolistic companies and will make our institutions cheaper, more transparent, and more resilient to data breaches."
+  }],
+  "why": [{
+    "lead": "",
+    "text": ""
+  }],
+  "how": [{
+    "lead": "",
+    "text": ""
+  }]
+}
