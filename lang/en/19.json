@@ -1,18 +1,17 @@
 {
   "title": "Inclusion",
-  "what": [{
-    "lead": "Make housing affordable, by integrating social and shared housing into the EU cohesion policy.",
-    "text": "Use available funds for social housing to improve the situation of low income groups, including marginalised groups, and urge Member States to subsidise shared social living."
+  "topic_list": [{
+    "proposal": "Make housing affordable, by integrating social and shared housing into the EU cohesion policy. Use available funds for social housing to improve the situation of low income groups, including marginalised groups, and urge Member States to subsidise shared social living.",
+    "why": "Social housing production has decreased across most European states in the past years. Across the EU, approximately 1 out of 20 people suffers from severe housing deprivation, and housing is currently the highest expenditure for Europeans, with overburden rate remaining high. In 29 addition, in most Member States, house prices are growing faster than income, mainly affecting the poor and marginalised groups, including children.",
+    "how": "We will support the European Commission in modernising its Cohesion Policy and ensure that the new framework allocates funds to sustainable social and shared housing across the EU. We will do this by lobbying on the principles of the Charter of Fundamental Rights of the EU and of the European Pillar of Social Rights, that access to affordable housing and shelter constitutes a core element of the ‘social inclusion’ objective. We will also call on the European Commission to integrate social housing in the allocation of relevant funds − such as the European Social Fund Plus, European Fund for Strategic Investments and European Regional Development Fund − to support Member States and to increase the transparency and accessibility to those funds. Finally, while in the European Parliament, we will push for a Commission recommendation calling on Member States to invest in social housing and other forms of shared-living, as an essential instrument to alleviating poverty and supporting marginalised groups. We will also use the cycles of policy coordination, namely the European Semester and the Open Method of Coordination, to encourage Member States to adopt initiatives directed at sustainable housing.",
+    "funding": "Various funds will be used, including the European Social Fund Plus, European Fund for Strategic Investments and European Regional Development Fund."
   }, {
-    "lead": " Alleviate child poverty ",
-    "text": "by implementing a minimum standard for universal child benefits across the EU."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": " Alleviate child poverty by implementing a minimum standard for universal child benefits across the EU.",
+    "why": "Up to 25 million children in the EU live in low income households and are at risk of poverty and social exclusion. Child poverty can have 30 long-term consequences, affecting educational attainments, access to equal opportunities, and participation in economic and social life.",
+    "how": "We will work towards ensuring that adequate attention and financial resources are dedicated to implementing minimum standards for universal child benefits in order to ensure the well-being of children until they reach adulthood, and preserve their human dignity. We will initiate a close cooperation and dialogue with EU institutions, such as the Council and the Commission, to make sure that the national operational programmes of the European Social Fund and the European Regional Development Fund allocate adequate resources to finance this proposal. Furthermore, we will monitor the definition of the national operational programmes through the tools available to the European Parliament.",
+    "funding": "The Regional Development Fund and the European Social Fund Plus will be used."
   }]
 }
+
+
+

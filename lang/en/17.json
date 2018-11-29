@@ -1,21 +1,19 @@
 {
   "title": "Public Sector",
-  "what": [{
-    "lead": "End police violence and discriminatory treatment of minorities, ",
-    "text": "by providing police training and revising laws, ending biased persecution and ensuring that the justice system does not discriminate against minorities."
+  "topic_list": [{
+    "proposal": "End police violence and discriminatory treatment of minorities, by providing police training and revising laws, ending biased persecution and ensuring that the justice system does not discriminate against minorities.",
+    "why": "Despite existing anti-discriminatory laws, minorities across Europe are frequently singled out by the police for checks and questioning without adequate justification other than their ethnicity, skin colour or religion. They are also more likely to face arrest, charging, prosecution and imprisonment. Similarly, along with other vulnerable groups − including women and LGBTIQ+ people −, these individuals are often discriminated against in courts owing to bias practices within the justice system.",
+    "how": "We will lobby for the EU Agency for Law Enforcement Training to develop clear and common guidance and limit officers’ discretionary authority. We will also strengthen the fundamental principle of access to justice, already recognised by the EU (Article 47 CFREU; Article 4.3 TEU; Article 19 TEU), by launching an assessment aimed at testing and improving the implementation of those EU measures oriented at ensuring a fair and public hearing before a tribunal, such as Directive 2012/13/EC; Directive 2010/64/EU; and Directive 2013/48/EC. In addition, we will promote an inter-institutional declaration which specifies that the EU recognises all the rights and freedoms defined by the European Convention of Human Rights as general principles of EU law, including but not limited to, the prohibition of torture, the right to a fair trial, and the right to an effective remedy.",
+    "funding": "Not applicable: this proposal bears no cost for the EU budget."
   }, {
-    "lead": "Aim for full equality and diversity for underrepresented groups in the public sector ",
-    "text": "in Member States and in EU institutions, by putting in place preferential treatment, reporting on diversity and accommodating special needs."
+    "proposal": "Aim for full equality and diversity for underrepresented groups in the public sector in Member States and in EU institutions, by putting in place preferential treatment, reporting on diversity and accommodating special needs.",
+    "why": "Key public positions, both at national and European levels, are run by a homogenous group of individuals that do not adequately portray the society they are meant to represent.",
+    "how": "While in the European Parliament, we will craft a directive requiring national, regional and local public administrations to give special consideration, throughout the hiring process, to individuals from an underrepresented minority in case of final candidates being equally qualified. The directive will also call for mandatory reporting on overall diversity and for the establishment of an anti-discrimination officer.",
+    "funding": "Not applicable: this proposal bears no cost for the EU budget."
   }, {
-    "lead": "Ensure equal gender representation in EU politics and encourage female participation,",
-    "text": "by having gender-alternate lists of candidates and by other means, such as mandatory reporting on gender representation."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Ensure equal gender representation in EU politics and encourage female participation, by having gender-alternate lists of candidates and by other means, such as mandatory reporting on gender representation.",
+    "why": "In the EU, up to 70% of national parliamentarians are men, and women form only 36% of the European Parliament, despite studies showing that 28 more women in politics results in stronger democracies. This discrepancy needs to change, and we have to ensure that gender representation increases within decision-making positions.",
+    "how": "While in the European Parliament, we will work to pass a directive requiring all EU bodies to report on gender balance and to set concrete plans to increase gender representation within. In addition, we will push forward a recommendation calling for political parties to achieve parity on electoral lists. The recommendation will also call on all political parties to submit altering lists of male and female candidates for European election.",
+    "funding": "Not applicable: this proposal bears no cost for the EU budget."
   }]
 }

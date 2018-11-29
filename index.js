@@ -7,6 +7,13 @@
   // parameters
   /////////////////////////////
   var OPTION_DICT = {};
+  
+  /////////////////////////////
+  // methods
+  /////////////////////////////
+  function isString(x) {
+    return Object.prototype.toString.call(x) === "[object String]";
+  }
 
   rJS(window)
 
@@ -14,29 +21,34 @@
     // ready
     /////////////////////////////
     .ready(function (gadget) {
-      var body_tags = gadget.element.querySelectorAll('[data-i18n]');
-      var script;
       gadget.property_dict = {
-        "body_tags": body_tags,
-        "body_len": body_tags.length,
+        "body_tags": gadget.element.querySelectorAll('[data-i18n]')
       };
     })
 
     /////////////////////////////
     // published methods
     /////////////////////////////
-    .allowPublicAcquisition("translateDom", function (my_dict) {
+    .allowPublicAcquisition("translateDom", function (my_payload) {
       var gadget = this;
       var dict = gadget.property_dict;
       var i;
       var tag;
+      var tag_list;
+      var tag_len;
+      var dictionary = my_payload[0];
+      var dom = my_payload[1];
 
-      // XXX?
-      var dictionary = my_dict[0];
+      if (dom && !isString(dom)) {
+        tag_list = dom.querySelectorAll('[data-i18n]');
+      } else {
+        tag_list = dict.body_tags;
+      }
+      tag_len = tag_list.length;
 
-      for (i = 0; i < dict.body_len; i += 1) {
-        tag = dict.body_tags[i];
-        tag.textContent = dictionary[tag.getAttribute("data-i18n")];
+      for (i = 0; i < tag_len; i += 1) {
+        tag = tag_list[i];
+        tag.textContent = dictionary[tag.getAttribute('data-i18n')];
       }
     })
 
@@ -50,7 +62,7 @@
           return my_volt_gadget.render(OPTION_DICT);
         })
         .push(null, function (my_error) {
-          //throw my_error;
+          throw my_error;
 
           // poor man's error handling
           var fragment = window.document.createDocumentFragment();

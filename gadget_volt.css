@@ -859,6 +859,10 @@ background-image:
 .xmas-door_frame:not(.is-locked):hover .xmas-input:not(:checked) + .xmas-door {
   border-color: #fff;
 }
+
+.volt-offline-flag {
+  display: none;
+}
 .grid-1 .xmas-input,
 .xmas-door_unset {
   position: absolute !important;
@@ -866,6 +870,10 @@ background-image:
 	width: 1px;
 	overflow: hidden;
 	clip: rect(1px,1px,1px,1px);
+}
+.volt-offline .volt-offline-flag {
+  display: block;
+  color: rgba(255,255,255,.6);
 }
 .xmas-door_frame {
   -webkit-perspective: 850px;
@@ -1363,4 +1371,23 @@ background-image:
   color: #fff;
   font-size: 1.25em;
 }
+/* ============================= TEXTBOX ==================================== */
+.volt-content-header {
+  font-weight: bold;
+  color: #612095;
+  text-align: center;
+  padding: 0;
+  font-size: 1.5em;
+}
+.volt-text-intro {
+  color: #612095;
+}
+.volt-content-proposal {
+  font-weight: bold;
+  padding: 0 1.5em 1em;
+  line-height: 1.25em;
+  color: #612095;
+}
+.volt-content-text {
+  padding: 0 1.5em;
 }

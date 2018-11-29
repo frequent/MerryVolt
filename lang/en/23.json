@@ -1,18 +1,18 @@
 {
   "title": "Entrepreneurship",
-  "what": [{
-    "lead": "Make it easy to set up a business by creating a European Digital One Stop Shop. ",
-    "text": "This will enable people to set up a business in 3 working days at a minimal administrative cost. To complement this, registration fees and processes will be harmonised and reporting, tax filing, and other government interactions will be streamlined across the EU."
+  "topic_list": [{
+    "proposal": "Make it easy to set up a business by creating a European Digital One Stop Shop. This will enable people to set up a business in 3 working days at a minimal administrative cost. To complement this, registration fees and processes will be harmonised and reporting, tax filing, and other government interactions will be streamlined across the EU.",
+    "why": "",
+    "how": "We propose to enhance the role of the European Investment Advisory Hubs (EIAH) under the European Fund for Strategic Investment (EFSI) to, in addition to its role in helping investment-seeking SMEs, act as a one stop shop, helping companies register within each Member State and the EU as a whole. Once their role is institutionalised, EIAHs across Europe will streamline registration procedures and set up the European Digital One Stop Shop. We advocate to amend European company law to harmonise Member State companies’ acts. Insolvency laws, currently under negotiation in the EU, need to be more ambitious and aligned with each other to allow for greater cross-border operations and business certainty for companies. We need to create a regulatory framework to improve the business environment for investors, stakeholders, and companies. This will strengthen the Single Market by modernising and harmonising consumer, contract, and company laws, as well as by implementing stronger non-discrimination and gender equality laws. We encourage companies to register, in accordance with EU corporate law, as societates Europaeae (SEs) by increasing awareness and brand of SE. This would enable companies to easily transfer to − or merge with − companies in other Member States. 3000 companies have already registered as SEs, but most registrations come from a limited number of Member States. To create a fair and inclusive Single Market, it is important to promote SEs across the whole EU, together with a set of common EU rules on SE and further harmonisation of European company and employment law. We will invest in inclusive entrepreneurship education to ensure access by those less represented in the field, including women and girls, and those facing social exclusion and marginalisation, including ethnic minorities, migrants, and refugees. We believe that the way to overcome obstacles faced by these groups is through the support of peer-to-peer connections, networks, and best practice sharing platforms.",
+    "funding": "The resources to finance our proposal are available under several EU programmes such as Erasmus for Young Entrepreneur, Single Market Programme, and ESF+."
   }, {
-    "lead": "Boost entrepreneurship and the creation of jobs,",
-    "text": "by scaling up investments in technologies such as blockchain, big data, artificial intelligence and cloud technologies to help Europe's strategic sectors to compete globally."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Boost entrepreneurship and the creation of jobs, by scaling up investments in technologies such as blockchain, big data, artificial intelligence and cloud technologies to help Europe's strategic sectors to compete globally.",
+    "why": "",
+    "how": "First we want to strengthen the European Fund for Strategic Investments by enabling it to be used to fund innovation through direct investment, as well as by adopting more risk-friendly rules for its capital. In addition, Volt proposes to contribute to the competitiveness and sustainability of enterprises by providing funds in less favoured regions and those of common interest to several Member States for small and medium-sized enterprises (SMEs) that reinvest surplus capital in expanding their businesses, research and development, training programmes for their workers, or creating new jobs. Furthermore, we will make access to financing easier for innovative SMEs – those contributing to the transition to a low-carbon and climate-resilient economy and society – during creation, expansion, and business transfer stages. This access to financing should be in the form of loan guarantees and equity facilities, improved access to markets, and improved conditions for business creation and growth by improving the visibility of financing instruments such as the Competitiveness of Enterprises and Small and Medium-sized Enterprises Programme, and Innovation in SMEs Programmes. Lastly, we promote social enterprises, including alternative business models such as cooperatives and mutuals, and we want to ensure improved access to financing for under-represented groups in the field of entrepreneurship. We will combat harmful practices such as loan-sharking towards vulnerable groups, particularly in the field of micro-finance.",
+    "funding": "The resources to finance our proposal are available under several EU programmes such as Erasmus for Young Entrepreneur, Single Market Programme, ESF+, InvestEU, Digital Europe, Horizon Europe, and LIFE."
   }]
 }
+
+
+
+

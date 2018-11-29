@@ -1,21 +1,22 @@
 {
   "title": "Innovation",
-  "what": [{
-    "lead": "Ensure European excellence in the future by doubling the spending on Research and Development to 4% of EU GDP by 2025",
-    "text": "Push countries to invest in innovation to master the environmental and social challenges of tomorrow."
+  "topic_list": [{
+    "proposal": "Ensure European excellence in the future by doubling the spending on Research and Development to 4% of EU GDP by 2025. Push countries to invest in innovation to master the environmental and social challenges of tomorrow.",
+    "why": "Research and technological progress is the foundation of our high standard of living. To guarantee our future wellbeing and remain competitive with traditional powers such as the USA and Japan, and rising powers such as China and India, our European and national research programmes need to be intensified, and spending must be increased substantially.",
+    "how": "Centralised EU level R&I funding, through the Research Framework Programmes in the Multiannual Financial Framework, fosters international collaboration and competition, pushing research quality beyond levels that individual Member States can attain and reducing duplication of efforts. Therefore, we advocate to increase spending on research and innovation to reach 160 bn€ for the next Research Framework Programme, named Horizon Europe. We also need to increase R&I funding outside the Multiannual 17 Financial Framework through public-private partnerships by ramping up investments on fit-for-purpose initiatives, such as the Joint Undertakings or the Flagship Initiatives, to more flexibly address urgent research topics and objectives. We aim to better align EU and national R&I investments to effectively concentrate research efforts and increase efficiency. This includes simplifying the EU funding landscape, developing a common strategic R&I agenda for the European Research Area, especially focused on topics with EU added value, increasing the role of the Joint Research Centres, and encouraging Member States to develop multiannual national R&I strategies that complement the common agenda. Moreover, we believe it is possible to better capitalise on ideas and translate more research into innovation by improving the entrepreneurial ecosystems in national and regional tech parks through (regulatory) policy experimentation and funding of Operational Programmes dealing with competitiveness and innovation. Finally, we want to incentivise private R&I investments and industry investments that translate university/public research into innovation by encouraging Member States to put in place R&D tax credits for university-industry collaboration and co-funding. Incentives should be targeted towards startups and companies not affiliated with large corporations, and investments which rely on EU funding should also be eligible for such tax credits. Eventually, we aim to develop a comprehensive EU fiscal policy on R&I that still allows Member States and regions to address local need.",
+    "funding": "The resources to finance our proposal are mainly available under Horizon Europe."    
   }, {
-    "lead": "Become smart in Artificial Intelligence, ",
-    "text": "by creating the EU High Level Artificial Intelligence Coordination Office to gather the best minds and businesses in the field, set up a European AI Initiative, and establish high ethical standards for AI."
+    "proposal": "Become smart in Artificial Intelligence, by creating the EU High Level Artificial Intelligence Coordination Office to gather the best minds and businesses in the field, set up a European AI Initiative, and establish high ethical standards for AI.",
+    "why": "Artificial Intelligence development calls for a European AI Initiative: i) to gain critical mass to compete globally, as no individual national initiative by itself can keep up with the competition from other key player, such as the US or China, ii) to ensure AI technology is built in Europe and based on EU’s Human Values, and iii) to prepare for undesirable effects of AI, such as involuntary unemployment.",
+    "how": "To achieve this, we will work to ensure adequate funding for the European AI Initiative, including for the High Level AI Office, and support the European Commission in its announced AI Research and Development Initiative. This includes a budget target of €20 billion per year by 2020 for supporting multi-national efforts.",
+    "funding": "The resources to finance our proposal are available under several EU programmes such as Digital Europe, InvestEU and Horizon Europe"
   }, {
-    "lead": "Make Artificial Intelligence available and accessible for everyone, ",
-    "text": "by increasing the European Investment Bank’s support for AI investments to at least €1 billion a year by 2020, and by setting up a centralised “AI-on-demandplatform” to provide a single access point to key AI resources in the EU."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Make Artificial Intelligence available and accessible for everyone, by increasing the European Investment Bank’s support for AI investments to at least €1 billion a year by 2020, and by setting up a centralised “AI-on-demandplatform” to provide a single access point to key AI resources in the EU.",
+    "why": "We want to make AI available and accessible by creating an 'AI-on-demand-platform' to provide a publicly funded European access point for AI developers and businesses to knowledge, data, and computing power needed to compete with global actors. To implement the platform, the European Commission can build on the existing network of more than 400 Digital Innovation Hubs.",
+    "how": "We will work to attract private investments in AI, including by increasing the European Investment Bank’s support for AI investments to at least €1 billion a year after 2020, and by rolling out the Pan-European Venture Capital Fund-of-Funds Programme – Venture EU – a €2.1 billion fund to boost investment in innovative start-up and scale-up companies across Europe.",
+    "funding": "The resources to finance our proposal are available under several EU programmes such as Digital Europe, InvestEU and Horizon Europe"
   }]
 }
+
+
+

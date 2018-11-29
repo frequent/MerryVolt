@@ -1,18 +1,18 @@
 {
   "title": "Corruption",
-  "what": [{
-    "lead": "Make EU project funding dependent on national efforts to fight corruption. ",
-    "text": "Member States combating corruption will see their efforts rewarded, and others failing to do so will be sanctioned."
+  "topic_list": [{
+    "proposal": "Make EU project funding dependent on national efforts to fight corruption. Member States combating corruption will see their efforts rewarded, and others failing to do so will be sanctioned.",
+    "why": "Corruption takes different forms in different countries, but whether it's affecting unobtrusive access to public services or fair representation of citizens' interest in politics, corruption always places a burden on a functioning society and democracy in as a whole. While many EU nations rank high on the Transparency International list of lowest perceived corruption (per 2017) or have improved significantly (eg Greece), several EU Member 16 States have ongoing or increasing issues with corruption and are ranking as low as 69th.",
+    "how": "We will work to ensure that EU project funding that is allocated to national institutions to be managed should, to some degree, depend on national efforts to fight corruption. To this end, Volt will amend the methods currently used for allocating EU funds. Countries with high or improving rankings should see their fight against corruption rewarded in the form of additional funding or more benevolent conditions while funds for projects prone to corruption should receive a malus-reduction when distributed to lower ranking countries. We also work towards a system where fund awarding processes for Member States in which corruption is more prevalent are to be subject to strict expenditure supervision, to avoid misappropriation and ensure that the funds deliver best value for money. This will create an incentive on a project-to-project basis to abstain from corruption as it decreases the overall funding available. Finally, we will extend the role of the EU Consumer Centres Network pertaining to consumer protection, and provide the means for citizens to point out day-to-day corruptions in an effort to visualise the problem and create pressure to change.",
+    "funding": "The EU Anti-Fraud Programme can be used for funding."
   }, {
-    "lead": "Stop corruption ",
-    "text": "by granting new investigative powers to the European Anti-Fraud and Public Prosecutor’s Offices, and increase the competences of the European Ombudsman to include examining suspicious handling of public funds."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Stop corruption by granting new investigative powers to the European Anti-Fraud and Public Prosecutor’s Offices, and increase the competences of the European Ombudsman to include examining suspicious handling of public funds.",
+    "why": "Right now, the majority of anti-corruption initiatives are handled on the national level. In an ever closer Union it is of great importance that money from European citizens is not squandered due to corrupt practices. To accommodate this, we need anti-corruption institutions capable of operating at a European level.",
+    "how": "We will push to strengthen the EU institutional involvement through the following following three measures: First, we will expand the scope within which the European Anti-Fraud Office operates to include a focus on lobbying and illegal influencing of public actors by pushing for the replacement of Regulation No 883/2013 with an updated regulation that includes these focuses. Second, we will increase the European Ombudsman’s competences so that it can bring corruption-related cases occurring in any of the European Member States to the attention of the European Prosecutor’s Office by amending Article 228 TFEU and the Statute of the European Ombudsman to include oversight not only over EU institutions, organs and bodies, but also those of the respective Member States. We will push for a new system where European Ombudsman’s Office leads the office of the National Ombudsman and standardise the rules and regulations surrounding them. Third, we will adapt the core focus of the European Public Prosecutor’s Office to include fighting corruption in all its forms. To accomplish this, we will work to extend the scope of the European Public Prosecutor’s Office by making participation in it obligatory for all Member States, and adding misappropriation of EU funds to its core tenets, as well as increasing its budget and extending its staff to cope with the heightened workload.",
+    "funding": "The EU Anti-Fraud Programme and the Budget of the European Parliament can be used for funding."
   }]
 }
+
+
+
+

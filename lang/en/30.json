@@ -1,16 +1,10 @@
 {
   "title": "EU Reform",
-  "what": [{
-    "lead": "The European Union is our common project:",
-    "text": " we have managed to come together and build a Union that has ensured peace and prosperity for over sixty years. Yet, it has its shortcomings, which is why we want to reform and strengthen EU governance and institutions for a more democratic, more transparent and stronger Europe, a federal Europe; and we propose concrete policies for more efficient EU action to promote and protect the interests of all European citizens."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+  "topic_list": [{
+    "proposal": "The European Union is our common project:  we have managed to come together and build a Union that has ensured peace and prosperity for over sixty years. Yet, it has its shortcomings, which is why we want to reform and strengthen EU governance and institutions for a more democratic, more transparent and stronger Europe, a federal Europe; and we propose concrete policies for more efficient EU action to promote and protect the interests of all European citizens.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }
 

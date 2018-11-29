@@ -1,18 +1,14 @@
 {
   "title": "Aucun laissé pour compte",
-  "what": [{
-    "lead": "Assurer des niveaux de vie décents,",
-    "text": "en instaurant un revenu minimum supérieur au seuil de pauvreté dans tous les Etats membres."
+  "topic_list": [{
+    "proposal": "Assurer des niveaux de vie décents, en instaurant un revenu minimum supérieur au seuil de pauvreté dans tous les Etats membres.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Aider les personnes qui ont perdu leur travail dans des secteurs ou des régions affectés par les crises économiques, ",
-    "text": "en doublant le budget du Fonds Européen d’ajustement à la Mondialisation (FEM) et en le rendant plus flexible. Ces mécanismes faciliteront le retour à l’emploi lorsqu'une entreprise cesse ses activités en raison de difficultés économiques ou délocalise hors de l’UE."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Aider les personnes qui ont perdu leur travail dans des secteurs ou des régions affectés par les crises économiques, en doublant le budget du Fonds Européen d’ajustement à la Mondialisation (FEM) et en le rendant plus flexible. Ces mécanismes faciliteront le retour à l’emploi lorsqu'une entreprise cesse ses activités en raison de difficultés économiques ou délocalise hors de l’UE.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }

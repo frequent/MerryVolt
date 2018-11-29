@@ -1,15 +1,9 @@
 {
   "title": "Challenge: Smart State",
-  "what": [{
-    "lead": "Governments should provide high-quality public services for the benefit of their citizens and residents.",
-    "text": "Smart States must therefore continuously adapt to provide state-of-the-art public services in areas such as education, health care, and justice, to ensure social inclusion and equal opportunities. At the same time, new tools allow governments to increase their administrative effectiveness, fight corruption and earn their citizens' trust through accountable and transparent governance."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+  "topic_list": [{
+    "proposal": "Governments should provide high-quality public services for the benefit of their citizens and residents. Smart States must therefore continuously adapt to provide state-of-the-art public services in areas such as education, health care, and justice, to ensure social inclusion and equal opportunities. At the same time, new tools allow governments to increase their administrative effectiveness, fight corruption and earn their citizens' trust through accountable and transparent governance.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }

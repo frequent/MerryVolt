@@ -97,7 +97,8 @@
     // state
     /////////////////////////////
     .setState({
-      "locale": getLang(window.navigator).substring(0, 2)
+      "locale": getLang(window.navigator).substring(0, 2),
+      "online": null
     })
 
     /////////////////////////////
@@ -106,15 +107,14 @@
     .ready(function (gadget) {
       var element = gadget.element;
       gadget.property_dict = {
-        "what": getElem(element, ".volt-what-content"),
-        "why": getElem(element, ".volt-why-content"),
-        "how": getElem(element, ".volt-how-content"),
         "unset": getElem(gadget.element, ".xmas-door_clear"),
         "dialog": getElem(gadget.element, ".volt-dialog"),
+        "dialog_content": getElem(gadget.element, ".volt-dialog-content"),
 
         // yaya, should be localstorage caling repair to sync
         "url_dict": {},
-        "content_dict": {}
+        "content_dict": {},
+        "i18n_dict": {}
       };
     })
 
@@ -151,9 +151,19 @@
    .declareMethod("stateChange", function (delta) {
       var gadget = this;
       var state = gadget.state;
+
       if (delta.hasOwnProperty("locale")) {
         state.locale = delta.locale;
       }
+      if (delta.hasOwnProperty("online")) {
+        state.online = delta.online;
+        if (state.online) {
+          gadget.element.classList.remove("volt-offline");
+        } else {
+          gadget.element.classList.add("volt-offline");
+        }
+      }
+      return;
    })
 
     // thx: https://css-tricks.com/simple-social-sharing-links/
@@ -175,8 +185,8 @@
       popup = window.open(
         SOCIAL_MEDIA_CONFIG[my_scm].supplant({
           "url": encodeURIComponent(LOCATION.href),
-          "text":"heya",
-          "tag_list": "VoteVolt"
+          "text":"",
+          "tag_list": "#VoteVolt"
         }),
         is_mobile.matches ? BLANK : STR,
         is_mobile.matches ? null : POPPER
@@ -194,7 +204,7 @@
       if (my_event.target.parentElement.classList.contains("is-locked")) {
         return;
       }
-      if (!target || target.indexOf("http") === -1) {
+      if (!target || target.indexOf("http") === -1 || gadget.state.online === false) {
         return;
       }
       return new RSVP.Queue()
@@ -202,20 +212,30 @@
           return gadget.volt_get(target);
         })
         .push(function (my_data) {
+          var tab_head = STR;
+          var tab_content = STR;
+          var topic;
+          var i;
 
-          // so much hoopla to translate the tab header in the template... sigh
-          setDom(dict.what, getTemplate(KLASS, "what_template").supplant({
-            "topic": my_data.title,
-            "what_content": buildParagraphs(my_data.what)
-          }), true);
-          setDom(dict.why, getTemplate(KLASS, "why_template").supplant({
-            "why_content": buildParagraphs(my_data.why)
-          }), true);
-          setDom(dict.how, getTemplate(KLASS, "how_template").supplant({
-            "how_content": buildParagraphs(my_data.how)
+          for (i = 0; i < my_data.topic_list.length; i += 1) {
+            topic = my_data.topic_list[i];
+            topic.id = i + 1;
+            topic.active = i === 0 ? "is-active" : STR;
+            topic.title = my_data.title;
+            topic.slug = topic.proposal.substring(0,10).split(" ").join("-").toLowerCase();
+            tab_head += getTemplate(KLASS, "dialog_tab_header").supplant(topic);
+            tab_content += getTemplate(KLASS, "dialog_tab_content").supplant(topic);
+          }
+
+          setDom(dict.dialog_content, getTemplate(KLASS, "dialog_template").supplant({
+            "tab_list": tab_head,
+            "content_list": tab_content
           }), true);
 
           window.componentHandler.upgradeElements(dialog);
+          return gadget.translateDom(dict.i18n_dict, dialog);
+        })
+        .push(function () {
           return gadget.handleDialog();
         });
     })
@@ -243,12 +263,14 @@
 
     .declareMethod("fetchTranslationAndUpdateDom", function (my_language) {
       var gadget = this;
-      var url_dict = gadget.property_dict.url_dict;
+      var dict = gadget.property_dict;
+      var url_dict = dict.url_dict;
       return new RSVP.Queue()
         .push(function () {
           return gadget.volt_get(url_dict.ui);
         })
         .push(function (data) {
+          dict.i18n_dict = data;
           return gadget.translateDom(data);
         });
     })
@@ -318,7 +340,37 @@
     // declared service
     /////////////////////////////
     .declareService(function () {
-      DOCUMENT.body.classList.remove("volt-splash");      
+      var gadget = this;      
+      var today = new Date();
+      var radio_list = gadget.element.querySelectorAll("input[name=xmas]");
+      var door;
+      var elem;
+      var i;
+      var len = radio_list.length;
+      for (i = 0; i < len; i += 1) {
+        elem = radio_list[i];
+        door = new Date(2017, 12, radio_list[i].value, 0, 0, 0, 0);
+        if (today > door) {
+          elem.parentElement.classList.remove("is-locked");
+        }
+      }
+      DOCUMENT.body.classList.remove("volt-splash");     
+    })
+
+    /////////////////////////////
+    // declared service
+    /////////////////////////////
+    .declareService(function () {
+      var gadget = this;
+      var listener = window.loopEventListener;
+
+      function handleConnection() {
+        return gadget.stateChange({"online": window.navigator.onLine});
+      }
+      return RSVP.all([
+        listener(window, "online", false, handleConnection),
+        listener(window, "offline", false, handleConnection),
+      ]);
     })
 
     /////////////////////////////

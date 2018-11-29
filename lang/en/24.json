@@ -1,22 +1,20 @@
 {
   "title": "Future Of Work",
-  "what": [{
-    "lead": "Protect the dignity and safety of workers, ",
-    "text": "especially in new sectors. Provide workers with non-traditional long-term contracts (e.g., gig, platform, freelance) with standards of protection comparable to those applicable to traditional forms of work."
+  "topic_list": [{
+    "proposal": "Protect the dignity and safety of workers, especially in new sectors. Provide workers with non-traditional long-term contracts (e.g., gig, platform, freelance) with standards of protection comparable to those applicable to traditional forms of work.",
+    "why": "A growing number of workers in flexible or unstable work arrangements are not adequately covered by social security, and face a higher risk of poverty. Massive changes in labour markets compounded by the emergence of new models of work make it imperative to adjust mechanisms of social protection built around shrinking traditional forms of employment. We will support Member States to reform its social security schemes to close formal coverage gaps, so that non-standard workers and the self-employed across Europe enjoy guaranteed minimum protection standards for unemployment, sickness and healthcare, maternity or paternity, accidents at work and occupational diseases, disability, and old age. ",
+    "how": "We will do so through the results of the social scoreboard and a punctual implementation of the Employment Guidelines, which provide the basis for country-specific recommendations arising from the European Semester, the yearly cycle of policy coordination. To avoid unfair competition, especially between online and offline jobs, we will put in place EU-wide schemes, defined with the support of European social partners, to create a level playing field to ensure that countries respect the same obligations regarding workers’ access to social protection, regardless of their status as employees or self-employed.",
+    "funding": "Due to the fact that we call for the cooperation of the Social. Partner, budget lines for the European Social Dialogue can be used to conduct studies and share best practices."
+
   }, {
-    "lead": "Create flexible workplaces via an EU-wide Working Time Choice Act, ",
-    "text": "enabling workers and employers to negotiate flexible forms of work that reflect the needs of the individual, the team, and the business."
+    "proposal": "Create flexible workplaces via an EU-wide Working Time Choice Act, enabling workers and employers to negotiate flexible forms of work that reflect the needs of the individual, the team, and the business.",
+    "why": "",
+    "how": "We will encourage social dialogue in the form of consultation and negotiation between social partners. Collective agreements at a sectoral level are generally the best way to strengthen the negotiation position of workers, and they support micro-businesses as well as SMEs, which rely on such agreements when they lack internal capacity, personnel, or know-how to conduct negotiations at company level. We will create a supportive environment for company-level agreements, making flexible workplaces and times possible in accordance with the needs of all involved. This will be achieved by drafting a European Working Time Choice Act through a multi-sector consultation involving all social partners (workers, employers, governments, and civic organisations) who have a specific focus, such as on family and health, at the national and EU level. Given the variety of worker preferences, company needs, and national circumstances, it is becoming difficult to develop uniform regulations for all possible situations. Instead, Working Time Choice policies aim at ‘Regulated Self-regulation’, providing the legal boundaries and basic protections, but empowering social partners in their search for balanced solutions to specific situations.",
+    "funding": "Not applicable: this proposal bears no cost for the EU budget."
   }, {
-    "lead": "Prepare the European labour force for the challenges of tomorrow, ",
-    "text": "by setting up the European Sector Skills Council to research the skills needed in the future. This will enhance synergies between the private and public sector."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Prepare the European labour force for the challenges of tomorrow, by setting up the European Sector Skills Council to research the skills needed in the future. This will enhance synergies between the private and public sector.",
+    "why": "",
+    "how": "We will promote the reformation and the adaptation of the existing European Sector Skills Councils to acquire and understand skills required in each sector, attempting to anticipate the impact of the unfolding Fourth Industrial Revolution. Cross-country cooperation at present is rare and EU level Sector Councils will boost the effectiveness of national councils and have a positive impact on the responsiveness of education systems to future labour market needs. To make sure this common strategy is effective, the Councils should consist of representatives of national and European social partners, guaranteeing that the results reach workers and employers across Europe. Councils will have an advisory role for national and European policy makers as well as for companies and workers regarding the labour market, skills development, vocational training, and upskilling. The Councils will formulate recommendations on how to better use resources from existing EU programmes to make financing of the agreed measures easier for workers and companies. We will initiate a Work 4.0 public consultation process at the European level to explore changing basic values concerning work across Europe, and to inform policy formulation at the EU and Member State level.",
+    "funding": "The resources to finance our proposal are available under Erasmus+ and for complementary actions ESF+."
   }]
 }
-

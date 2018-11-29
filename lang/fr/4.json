@@ -1,21 +1,19 @@
 {
   "title": "Sécurité",
-  "what": [{
-    "lead": "Améliorer les capacités de défense européenne, ",
-    "text": "en instaurant une armée européenne avec les Etats membres qui souhaiteraient s’engager, pour, à terme, arriver à la création d’une force armée européenne permanente sous l’égide d’un commandement militaire européen soumis à un contrôle civil."
+  "topic_list": [{
+    "proposal": "Améliorer les capacités de défense européenne, en instaurant une armée européenne avec les Etats membres qui souhaiteraient s’engager, pour, à terme, arriver à la création d’une force armée européenne permanente sous l’égide d’un commandement militaire européen soumis à un contrôle civil.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Renforcer la sécurité intérieure dans l’Union Européenne, ",
-    "text": "en transformant l’actuel office européen de police (EUROPOL) en une véritable police fédérale chargée de la lutte contre le crime transfrontalier, le terrorisme et le cyberterrorisme."
+    "proposal": "Renforcer la sécurité intérieure dans l’Union Européenne, en transformant l’actuel office européen de police (EUROPOL) en une véritable police fédérale chargée de la lutte contre le crime transfrontalier, le terrorisme et le cyberterrorisme.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Garantir la sécurité de l’infrastructure numérique de l’UE, ",
-    "text": "en la dotant uniquement de logiciels ouverts. Cela réduira la dépendance aux entreprises monopolistiques et abaissera les coûts de nos institutions, qui seront plus transparentes et résistantes en cas de fuites de données."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Garantir la sécurité de l’infrastructure numérique de l’UE, en la dotant uniquement de logiciels ouverts. Cela réduira la dépendance aux entreprises monopolistiques et abaissera les coûts de nos institutions, qui seront plus transparentes et résistantes en cas de fuites de données.",
+    "why": "",
+    "how": "",
+    "funding": ""    
   }]
 }

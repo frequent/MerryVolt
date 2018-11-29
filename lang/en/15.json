@@ -1,18 +1,17 @@
 {
   "title": "Sustainable Agriculture",
-  "what": [{
-    "lead": "Support sustainable agriculture, ",
-    "text": " by refocusing the Common Agricultural Policy away from larger producers and towards smaller producers that use ecological approaches."
+  "topic_list": [{
+    "proposal": "Support sustainable agriculture,  by refocusing the Common Agricultural Policy away from larger producers and towards smaller producers that use ecological approaches.",
+    "why": "It is well established that livestock agriculture is highly resource intensive, and leads to deforestation and erosion in many parts of the world. While maintaining middle and large producers may increase competition and keep prices down, it increases the risk of developing monocultures which are not sustainable both from an economic as well as from an environmental perspective. To maintain sustainable agriculture, industrial technology needs to be relied on only to increase resource efficiency and when this has no adverse environmental impacts.",
+    "how": "We will support the sustainability reform of the Common Agricultural Policy (CAP). Firstly, by introducing a proposal to include in the CAP increased payouts as part of ‘green’ direct payment to farms of all sizes to move from monoculture to rotating and diverse cultures. Secondly, by providing benefits to stimulate sharing and co-investing in machinery, collaborating on data, and developing solutions for use of manure, water, and food waste.",
+    "funding": "The European Agricultural Guarantee Fund (EAGF) will be used, as well as the European Agricultural Fund for Regional Development."
   }, {
-    "lead": "Increase product quality and biodiversity, ",
-    "text": "by supporting farms that manage land in accordance with local ecosystems, by focusing on connecting natural habitats, and by banning the use of pesticides and neonicotinoids."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Increase product quality and biodiversity, by supporting farms that manage land in accordance with local ecosystems, by focusing on connecting natural habitats, and by banning the use of pesticides and neonicotinoids.",
+    "why": "The focus on monocultures and resulting susceptibility of crops and livestock to diseases requires heavy use of pesticides and antibiotics, which, in turn, affects insect populations and can render antibiotics useless for treating human diseases. This is too heavy a price tag to put on our eco- and health systems.",
+    "how": "Once in the European Parliament, we will push for a resolution limiting the use of pesticides that have not been approved by organic farming associations to promote local biodiversity and varieties, and to reduce susceptibility to fungi/diseases. Additionally, by further developing the link between the reception of income support and the protection of animal welfare, we will push for stricter standards on livestock farming with species-appropriate herd sizes, adequate space, and the integration of playthings as part of a general animal welfare legislation.",
+    "funding": "The European Agricultural Guarantee Fund (EAGF) will be used, as well as the European Agricultural Fund for Regional Development."
   }]
 }
+
+
+

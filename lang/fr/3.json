@@ -1,18 +1,14 @@
 {
   "title": "Inclusion",
-  "what": [{
-    "lead": "Abroger les barrières au vote pour le Parlement européen, ",
-    "text": "en testant le vote électronique pour offrir aux citoyens un meilleur accès aux élections, en particulier pour les expatriés et les personnes à mobilité réduite."
+  "topic_list": [{
+    "proposal": "Abroger les barrières au vote pour le Parlement européen, en testant le vote électronique pour offrir aux citoyens un meilleur accès aux élections, en particulier pour les expatriés et les personnes à mobilité réduite.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Garantir un meilleur accès aux services publics et faciliter les interactions avec les administrations de l’UE, ",
-    "text": "en instaurant une carte d’identité numérique et en tenant compte des acquis de la révolution numérique dans le fonctionnement des administrations européennes."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Garantir un meilleur accès aux services publics et faciliter les interactions avec les administrations de l’UE, en instaurant une carte d’identité numérique et en tenant compte des acquis de la révolution numérique dans le fonctionnement des administrations européennes.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }

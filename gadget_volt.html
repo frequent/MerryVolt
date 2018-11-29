@@ -14,53 +14,49 @@
     <script src="renderjs.latest.min.js"></script>
     <script src="gadget_global.js"></script>
     <script src="gadget_volt.js"></script>
-
-    <script id="paragraph_template" type="text/x-supplant">
-      <li class="mdl-tabs__content-item"><strong>{paragraph_lead}</strong>{paragraph_text}</li>
+    
+    <script id="dialog_tab_header" type="text/x-supplant">
+      <a href="#{slug}" class="mdl-tabs__tab {active}">{id}</a>
     </script>
 
-    <script id="what_template" type="text/x-supplant">
-      <h3 class="mdl-tabs__content-header">{topic}</h3>
-      <ol class="mdl-tabs__content-list">{what_content}</ol>
+    <script id="dialog_tab_content" type="text/x-supplant">
+      <div class="mdl-tabs__panel {active}" id="{slug}">
+        <h3 class="mdl-tabs__content-item volt-content-header">{title}</h3>
+        <h4 class="mdl-tabs__content-item volt-content-proposal" >{proposal}</h4>
+        <p class="mdl-tabs__content-item volt-content-text"><strong class="volt-text-intro" data-i18n="rationale">Rationale</strong>&nbsp;{why}</p>
+        <p class="mdl-tabs__content-item volt-content-text"><strong class="volt-text-intro" data-i18n="measures">Steps</strong>&nbsp;{how}</p>
+        <p class="mdl-tabs__content-item volt-content-text"><strong class="volt-text-intro" data-i18n="funding">Funding</strong>&nbsp;{funding}</p>
+      </div>
     </script>
-    <script id="why_template" type="text/x-supplant">
-      <ol class="mdl-tabs__content-paragraph">{why_content}</ol>
+    
+    <script id="dialog_template" type="text/x-supplant">
+      <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect volt-dialog-content-container">
+        <div class="mdl-tabs__tab-bar">{tab_list}</div>
+        {content_list}
+        <div class="mdl-dialog__actions volt-dialog-actions stale">
+          <form name="volt-dialog-close" class="volt-dialog-action-form volt-dialog-close-form">
+            <button type="submit" class="mdl-button volt-dialog-close mdl-button--fab"><i class="material-icons">close</i></button>
+          </form>
+          <span data-i18n="Share this proposition:" class="volt-dialog__action-share">Share this proposition:</span>
+          <form name="volt-share-facebook" class="volt-dialog-action-form">
+            <button type="submit" class="mdl-button volt-dialog-share-fb">
+              <i class="fab fa-facebook"></i>
+            </button>
+          </form>
+          <form name="volt-share-twitter" class="volt-dialog-action-form">
+            <button type="submit" class="mdl-button volt-dialog-share-tw">
+              <i class="fab fa-twitter"></i>
+            </button>
+          </form>
+        </div>
+      </div>
     </script>
-    <script id="how_template" type="text/x-supplant">
-      <ol class="mdl-tabs__content-paragraph">{how_content}</ol>
-    </script>
+        
   </head>
   <body>
 
     <div class="mdl-dialog volt-dialog">
-      <div class="mdl-dialog__content volt-dialog-content">
-        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect volt-dialog-content-container">
-          <div class="mdl-tabs__tab-bar stale">
-            <a href="#what-panel" data-i18n="What?" class="mdl-tabs__tab is-active">What?</a>
-            <a href="#why-panel" data-i18n="Why?" class="mdl-tabs__tab">Why?</a>
-            <a href="#how-panel" data-i18n="How?" class="mdl-tabs__tab">How?</a>
-          </div>
-          <div class="mdl-tabs__panel is-active volt-what-content" id="what-panel"></div>
-          <div class="mdl-tabs__panel volt-why-content" id="why-panel"></div>
-          <div class="mdl-tabs__panel volt-how-content" id="how-panel"></div>
-          <div class="mdl-dialog__actions volt-dialog-actions stale">
-            <form name="volt-dialog-close" class="volt-dialog-action-form volt-dialog-close-form">
-              <button type="submit" class="mdl-button volt-dialog-close mdl-button--fab"><i class="material-icons">close</i></button>
-            </form>
-            <span data-i18n="Share this proposition:" class="volt-dialog__action-share">Share this proposition:</span>
-            <form name="volt-share-facebook" class="volt-dialog-action-form">
-              <button type="submit" class="mdl-button volt-dialog-share-fb">
-                <i class="fab fa-facebook"></i>
-              </button>
-            </form>
-            <form name="volt-share-twitter" class="volt-dialog-action-form">
-              <button type="submit" class="mdl-button volt-dialog-share-tw">
-                <i class="fab fa-twitter"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
+      <div class="mdl-dialog__content volt-dialog-content"></div>
     </div>
 
     <div class="volt-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -71,6 +67,9 @@
           </a>
           <h1 class="volt-site-header" data-i18n="Political Program">Political Program</h1>
           <div class="mdl-layout-spacer"></div>
+          <button class="volt-offline-flag mdl-button mdl-js-button" disabled="disabled">
+            <i class="frube-icon material-icons">warning</i>
+          </button>
           <!--form name="frube-open-menu-->
           <button id="volt-open-menu" class="mdl-button mdl-js-button mdl-button--icon">
             <i class="material-icons">language</i>
@@ -127,7 +126,7 @@
             <p class="volt-introductory-paragraph" data-i18n="and since there are more propositions">and since there are more propositions, we just continue until year's end.</p>
           </div>
           <div class="day-1 xmas-day">
-            <label class="xmas-door_frame is-locked">
+            <label class="xmas-door_frame">
               <input type="radio" name="xmas" value="1" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date"><span class="volt-count">1</span><span class="volt-spoiler" data-i18n="Asylum Seekers and Refugees">Demandeurs d’asile et réfugiés</span></h2>

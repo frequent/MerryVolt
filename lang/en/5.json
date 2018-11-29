@@ -1,24 +1,31 @@
 {
   "title": "Create Jobs",
-  "what": [{
-    "lead": "Channel EU funds in challenged regions to create jobs, ",
-    "text": "by sponsoring smart and environmentally friendly investments, such as high-speed railway connections, improved accessibility and connectivity to rural areas and clean, local energy production sites."
+  "topic_list": [{
+    "proposal": "Channel EU funds in challenged regions to create jobs, by sponsoring smart and environmentally friendly investments, such as high-speed railway connections, improved accessibility and connectivity to rural areas and clean, local energy production sites.",
+    "why": "",
+    "how": "We commit to ensuring investments in a coherent EU-wide infrastructure system that connects regions, including rural areas, through available funding opportunities and prioritise projects that promote sustainability and higher added value for the whole region. We will incentivise private investments in challenged regions and rural areas, supporting big and small companies that invest in environmentally friendly projects. It is important to make available adequate economic resources and human capital to deliver on those projects. We support capacity-building in less favoured Member States or regions to enable a more effective public and private participation in funding programmes that promote eco-innovation, sustainable transport, and energy systems.",
+    "funding": "The resources to finance our proposal are available under several EU programmes such as Connecting Europe Facility, LIFE, Horizon Europe and InvestEU. Increase public spending on professional and vocational education to increase lifelong employability and the international competitiveness of apprentices. A special focus will be placed on areas with high long-term unemployment."
   }, {
-    "lead": "Increase public spending on professional and vocational education, ",
-    "text": "to increase lifelong employability and the international competitiveness of apprentices. A special focus will be placed on areas with high long-term unemployment."
+    "proposal": "Increase public spending on professional and vocational education, to increase lifelong employability and the international competitiveness of apprentices. A special focus will be placed on areas with high long-term unemployment.",
+    "why": "",
+    "how": "We will work to increase EU funding for the Youth Guarantee, which commits Member States to ensure that young people receive a quality offer of employment, education, apprenticeship, or training within 4 months of becoming unemployed or leaving education. We will review the implementation in tandem with national stakeholders to eliminate inefficiencies and improve the effectiveness of the initiative. We will focus on areas experiencing high youth unemployment and ensure a significant increase of EU budget allocation in the next budget period (2021-27), assessing the synergies with other programmes to optimise allocation of resources. We will offer learning experiences for non-academic careers by expanding ErasmusPRO, an action within the Erasmus+ Programme to support long-duration placement of apprentices abroad. A scaled-up ErasmusPRO will fight unemployment through high-quality internships, traineeships, and apprenticeships, offering further employment opportunities. Moreover, it will encourage social inclusion by facilitating access to participants with disadvantaged backgrounds and promote multilingualism. To make it a new EU flagship programme, expanding the scope of Erasmus+, it is important to improve the coordination with other programmes, such as Youth Guarantee, and increase its adaptability to the specific situation of each Member State. Furthermore, we will promote the improvement of visibility and participation in the European Solidarity Corps, which creates opportunities for young people to volunteer or work in projects in their own country or abroad in a wide range of sectors engaged in solidarity-related activities. Participation in the Corps will serve the dual goal of improving employability and bringing together young people to build a more inclusive society, to support vulnerable people, to and respond to societal challenges through an inspiring and empowering experience.",
+    "funding": "The resources to finance our proposal are available under several EU programmes such as Youth Guarantee, ErasmusPRO, ESF+, European Solidarity Corps, InvestEU, Erasmus+, and Horizon Europe."
   }, {
-    "lead": "Make it easier to find a job across Europe, ",
-    "text": "by setting up a real European Labour Platform to match the unemployed and employers across Europe. Expand the European Employment Services (EURES) and foster better cooperation with the private sector in order to move towards a truly united labour market."
+    "proposal": "Make it easier to find a job across Europe, by setting up a real European Labour Platform to match the unemployed and employers across Europe. Expand the European Employment Services (EURES) and foster better cooperation with the private sector in order to move towards a truly united labour market.",
+    "why": "",
+    "how": "We want to make sure that the effectiveness and visibility of the European Employment Service (EURES) are improved by engaging with national employment agencies, employers’ organisations, and companies to place relevant vacancies in a uniform and revised EURES format. This harmonisation will increase the number of job offers at the European level, make job seeking easier, and placements more effective. Member States will also use EURES to provide information on labour shortage and surplus per sector. We propose to use algorithms to match supply and demand driven by data analytics, aiming to forecast and react to future job shortages on a geographic and sectoral level. The use of these algorithms enables preventive measures to be tailored before job losses occur. We advocate for the improvement of the capacity of the European Social Fund and for the Employment and Social Innovation Programme to act as inclusive instruments and facilitate labour mobility by paying attention to the successful placements of the most vulnerable groups, such as unemployed youth, and to the regions most affected by unemployment. Adequate EU resources and know-how should be provided to modernise national employment services and help make them more effective, focusing on countries whose services are lagging, to enable them to carry out their activities.",
+    "funding": "The resources to finance our proposal are available under several EU programmes, such as ESF +, Erasmus +, Digital Europe, Horizon Europe, and InvestEU."
   }, {
-    "lead": "Invest in programmes supporting decentralised digital labour, ",
-    "text": "by providing devices and digital skills trainings at low costs. Investments will be focused on regions with high unemployment rates and with low level of digital skills or access to technology. "
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Invest in programmes supporting decentralised digital labour, by providing devices and digital skills trainings at low costs. Investments will be focused on regions with high unemployment rates and with low level of digital skills or access to technology.",
+    "why": "",
+    "how": "We encourage the development of digital skills by providing financial support through EU resources to encourage ownership of technological devices for low income and unemployed individuals. For this, we will rely on national employment services in the selection of those needing such support, given that they have a better overview of the local situation and are able to provide trainings and offer tailored solutions to people looking for employment. We encourage the use of online training platforms and developing new educational tools by working in tandem with universities, training providers, and other social partners to equip unemployed people with the skill-sets necessary to re-enter the labour market. We promote the establishment of a dialogue with the Public Employment Services to create programmes that make use of new tools, such as massive online courses, to educate job-seekers on how to search for jobs, or on earning a living via distance work through specialised coaches. These programmes would be equally accessible digitally across Europe, making it easier to target specifically those not in education, employment, or training.",
+    "funding": "The resources to finance our proposal are available under several EU programmes such as ESF+, Erasmus+, Digital Europe, Horizon Europe, and InvestEU."
   }]
 }
+
+
+
+
+
+
+

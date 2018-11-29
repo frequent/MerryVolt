@@ -1,16 +1,10 @@
 {
   "title": "Challenge: Citizen Empowerment",
-  "what": [{
-    "lead": "Europeans should be empowered to take informed political decisions,",
-    "text": "be able to influence politics beyond elections alone, and exercise their democratic rights within vibrant, resilient and highly deliberative democracies. Our policies are based on best practices regarding the fostering of a pluralistic information and media landscape, tools & technologies for political engagement and empowerment, and ways in which democracies can be made to thrive."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+  "topic_list": [{
+    "proposal": "Europeans should be empowered to take informed political decisions, be able to influence politics beyond elections alone, and exercise their democratic rights within vibrant, resilient and highly deliberative democracies. Our policies are based on best practices regarding the fostering of a pluralistic information and media landscape, tools & technologies for political engagement and empowerment, and ways in which democracies can be made to thrive.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }
 

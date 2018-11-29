@@ -1,24 +1,24 @@
 {
   "title": "Création d’emplois",
-  "what": [{
-    "lead": "Orienter les fonds de l’UE vers les régions en difficulté pour créer de l’emploi, ",
-    "text": "en soutenant les investissements responsables et écologiques, tels que la construction de voies rapides permettant l'accessibilité à des zones rurales ainsi que celle aux sites de production locale d’énergie propre."
+  "topic_list": [{
+    "proposal": "Orienter les fonds de l’UE vers les régions en difficulté pour créer de l’emploi, en soutenant les investissements responsables et écologiques, tels que la construction de voies rapides permettant l'accessibilité à des zones rurales ainsi que celle aux sites de production locale d’énergie propre.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Augmenter les dépenses publiques en matière de formation professionnelle",
-    "text": "et continue afin d’améliorer l’employabilité tout au long de la vie et la compétitivité des apprentis à l’international. Une attention particulière sera portée sur les secteurs avec un chômage de longue durée important."
+    "proposal": "Augmenter les dépenses publiques en matière de formation professionnelle et continue afin d’améliorer l’employabilité tout au long de la vie et la compétitivité des apprentis à l’international. Une attention particulière sera portée sur les secteurs avec un chômage de longue durée important.",
+    "why": "",
+    "how": "",
+    "funding": ""  
   }, {
-    "lead": "Faciliter la recherche d’emploi à l’échelle européenne, ",
-    "text": "en créant une véritable Plateforme Européenne de l’Emploi permettant la rencontre entre les employeurs et les demandeurs d'emploi de toute l’Europe. Il faut aussi étendre le Portail européen sur la mobilité de l’emploi (EURES) et favoriser une meilleure coopération avec le secteur privé afin de parvenir à un marché du travail véritablement unifié."
+    "proposal": "Faciliter la recherche d’emploi à l’échelle européenne, en créant une véritable Plateforme Européenne de l’Emploi permettant la rencontre entre les employeurs et les demandeurs d'emploi de toute l’Europe. Il faut aussi étendre le Portail européen sur la mobilité de l’emploi (EURES) et favoriser une meilleure coopération avec le secteur privé afin de parvenir à un marché du travail véritablement unifié.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Investir dans des programmes soutenant le numérique décentralisé, ",
-    "text": "en fournissant des équipements et des formations aux compétences digitales à bas coût. Ces investissements seront concentrés sur les régions subissant de forts taux de chômage et de faibles niveaux de compétences numériques ou de moindres accès aux technologies. "
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Investir dans des programmes soutenant le numérique décentralisé, en fournissant des équipements et des formations aux compétences digitales à bas coût. Ces investissements seront concentrés sur les régions subissant de forts taux de chômage et de faibles niveaux de compétences numériques ou de moindres accès aux technologies. ",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }

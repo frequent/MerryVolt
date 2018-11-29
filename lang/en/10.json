@@ -1,18 +1,16 @@
 {
-  "title": "Smart Energy",
-  "what": [{
-    "lead": "Grow the green economy, by introducing an EU-wide carbon tax ",
-    "text": "and other forms of carbon pricing along the entire production chain and by ending subsidies on fossil-based fuel. The funds gained will be used for relevant climate mitigation and adaptation projects and to create new jobs."
+  "title": "Minimize Climate Footprint",
+  "topic_list": [{
+    "proposal": "Grow the green economy, by introducing an EU-wide carbon tax and other forms of carbon pricing along the entire production chain and by ending subsidies on fossil-based fuel. The funds gained will be used for relevant climate mitigation and adaptation projects and to create new jobs.",
+    "why": "With climate reports stressing that we are not doing enough to prevent unsustainable levels of global warming, EU policies need to move from providing indirect incentives to reduce CO2, to actually putting a price on CO2. Europe has the resources and technology to take the lead in preventing climate change by curbing CO2 production without hindering international competitiveness.",
+    "how": "We will introduce a proposal to amend the Energy Taxation Directive to introduce a carbon tax on those sectors not yet covered by the Emissions Trading System, specifically fossil fuels in transportation and heating. This proposal will require European countries to introduce a minimum rate for carbon tax on fossil fuels. In addition, we will propose to adapt the Emissions Trading Directive and the Auctioning Regulation to include a minimum allowance price in the EU Emissions Trading Scheme (50€ in 2025) to create long-term price stability for developing and investing in clean technology. Other steps that will be taken include the introduction of a proposal to reduce free emission allowances and review eligibility criteria as included in the 'carbon leakage list' by amending the Emissions Trading Directive. Furthermore, we will introduce a proposal to amend the Energy Taxation Directive to no longer exempt fossil fuels, phasing out subsidies.",
+    "funding": "Not applicable, this proposal bears no cost for the EU budget."
   }, {
-    "lead": "Use energy in a smarter way, ",
-    "text": "by introducing smart electricity grids, by setting more ambitious energy-saving targets, and by creating incentives for green and low-energy public transportation."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Use energy in a smarter way, by introducing smart electricity grids, by setting more ambitious energy-saving targets, and by creating incentives for green and low-energy public transportation.",
+    "why": "With climate change implicitly demanding ambitious energy targets, steps need to be undertaken to establish a system capable of handling energy fluctuation and decentralised generation. In the same vein, transportation in general needs to be moving towards low polluting, efficient infrastructures capable of meeting demand while leaving the smallest energy footprint possible.",
+    "how": "We will introduce a proposal to fulfill the commitments of the Paris Agreement by including more ambitious climate and clean energy targets going beyond the 40% emissions reduction laid out in the European-wide Nationally Determined Contribution. Volt will develop a proposal to include more ambitious targets in the Energy Efficiency Directive and the Renewable Energy Directive; we work towards a 55% emission reduction target for the revised NDC, 40% more energy efficiency, 45% renewables by 2030. The proposal will aim at decreasing the emissions of the transport sector by moving cross-country transnational freight off the roads except for the last mile, reducing traffic congestion and pollution. In addition, we will refocus transportation subsidies from non self-sufficient installations such as airports to growing low emission infrastructures. We will further the sharing of alternative energies generated in European countries by introducing a proposal for a new legislative instrument in which minimum harmonised standards are included to facilitate a harmonised EU network of electric LNG/hydrogen fuel stations.",
+    "funding": "To realise the necessary cooperation among European countries for the purpose of establishing a harmonised network for the distribution of energy, we will rely on the European Regional Development Fund. The Cohesion and the Structural Funds will be used to re-focus transportation subsidies."
   }]
 }
+
+

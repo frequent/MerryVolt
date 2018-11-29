@@ -1,18 +1,19 @@
 {
   "title": "No One Left Behind",
-  "what": [{
-    "lead": "Ensure decent living standards,",
-    "text": "by adopting a minimum income above poverty level in all Member States."
+  "topic_list": [{
+    "proposal": "Ensure decent living standards, by adopting a minimum income above poverty level in all Member States.",
+    "why": "In order to truly implement the principle of the European Pillar of Social Rights, which affirms that 'everyone lacking sufficient resources has the right to adequate minimum income benefits ensuring a life in dignity at all stages of life, and effective access to enabling goods and services,' it is necessary that social rights become a core element of the employment policy guidelines determined through the European Semester, a yearly cycle of policy coordination. We will ensure that the every principle of the Pillar is adopted and put in place in all Member States.",
+    "how": "We propose to optimise the economic resources to ensure that the appropriate funds focus on social inclusion in all countries. This will enable Member States to fund projects, in accordance with their needs, to provide minimum income, bringing people and families out of poverty, and providing them with adequate living conditions. To face the radical changes happening in society and on the labour market, we need to be bold while offering solutions. For this reason, we propose to test new models of social protection, such as Universal Basic Income (UBI). To understand the impact of UBI as a policy instrument, we need well-designed large-scale pilot programmes run by local or national institutions under the overall guidance of the EU, which will be essential to design the pilot projects, monitor them, and evaluate the results. Therefore, we commit to create an High Level Group of experts, composed of government representatives from the Member States, EU Parliament and Commission representatives, as well as representatives from the Committee of the Regions, academics, social partners and other relevant stakeholders to conduct an in-depth analysis on UBI to design and provide a solid action plan to implement. To start with, the UBI should be tested in 5 diverse localities in Europe with at least 10,000 participants, for a period of at least 5 years.",
+    "funding": "The resources to finance our proposal are available under several EU programmes such as ESF+, European Regional Development Fund."
   }, {
-    "lead": "Support people who lost their jobs in sectors or regions affected by economic crises, ",
-    "text": "by doubling the funding of the European Globalisation Adjustment Fund and making it more flexible. These mechanisms will make the transition toward new jobs easier when a company ceases operations due to economic difficulties or moves outside the EU."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Support people who lost their jobs in sectors or regions affected by economic crises, by doubling the funding of the European Globalisation Adjustment Fund and making it more flexible. These mechanisms will make the transition toward new jobs easier when a company ceases operations due to economic difficulties or moves outside the EU.",
+    "why": "We want to simplify and make more comprehensive the European Globalisation Adjustment Fund, enabling it to support workers who lost their jobs and provide them with the means to re-join the labour market",
+    "how": "We will explore the Fund’s synergies with already available resources to provide financial support and training in time of crisis, while assessing the single requests. To achieve this objective, it is fundamental to involve EU institutions, Member States, and local authorities in the process, as well as representatives of both workers and employers.",
+    "funding": "Resources will come from the European Globalisation Adjustment Fund, activated together with the European Social Fund Plus, and the European Regional Development Fund, to optimise the synergies offered by these funds"
   }]
 }
+
+
+
+
+

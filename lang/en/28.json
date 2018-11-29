@@ -1,15 +1,9 @@
 {
   "title": "Challenge: Global Balance",
-  "what": [{
-    "lead": "In today's interconnected world, and given the recent developments in the international policy arena, Europe needs to assume responsibility ",
-    "text": "for its role in global challenges. These challenges include topics such as climate change, international fair trade, sustainable farming, food security, biodiversity, migration issues, and international development cooperation. This Challenge seeks to establish policies in line with the Sustainable Development Goals."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+  "topic_list": [{
+    "proposal": "In today's interconnected world, and given the recent developments in the international policy arena, Europe needs to assume responsibility for its role in global challenges. These challenges include topics such as climate change, international fair trade, sustainable farming, food security, biodiversity, migration issues, and international development cooperation. This Challenge seeks to establish policies in line with the Sustainable Development Goals.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }

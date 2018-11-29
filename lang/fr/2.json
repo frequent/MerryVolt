@@ -1,21 +1,19 @@
 {
   "title": "Gouvernance",
-  "what": [{
-    "lead": "Etablir une Europe fédérale dotée d’un gouvernement européen",
-    "text": ", dirigé par un premier ministre élu par le Parlement, et d’un président élu par le peuple. Cela permettra de créer une démocratie parlementaire européenne forte, ouverte et transparente."
+  "topic_list": [{
+    "proposal": "Etablir une Europe fédérale dotée d’un gouvernement européen, dirigé par un premier ministre élu par le Parlement, et d’un président élu par le peuple. Cela permettra de créer une démocratie parlementaire européenne forte, ouverte et transparente.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Permettre la création de réels partis politiques européens.",
-    "text": "Les partis actuels de l’UE sont des coalitions instables de partis nationaux, aux intérêts souvent divergeants; une réelle démocratie européenne nécessite des partis forts défendant leur propre vision du futur de l’Europe."
+    "proposal": "Permettre la création de réels partis politiques européens. Les partis actuels de l’UE sont des coalitions instables de partis nationaux, aux intérêts souvent divergeants; une réelle démocratie européenne nécessite des partis forts défendant leur propre vision du futur de l’Europe.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Assurer la capacité à agir de l’UE",
-    "text": "Assurer la capacité à agir de l’UE en généralisant les décisions prises à la majorité sur tous les sujets, et ce dans toutes les institutions. Actuellement, les Etats décident encore à l’unanimité ou par consensus sur de nombreuses questions, ce qui facilite les blocages plutôt que les avancées."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Assurer la capacité à agir de l’UE, assurer la capacité à agir de l’UE en généralisant les décisions prises à la majorité sur tous les sujets, et ce dans toutes les institutions. Actuellement, les Etats décident encore à l’unanimité ou par consensus sur de nombreuses questions, ce qui facilite les blocages plutôt que les avancées.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }
