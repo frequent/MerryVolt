@@ -374,7 +374,7 @@
       for (i = 0; i < len; i += 1) {
         elem = radio_list[i];
         door = new Date(2018, 12, radio_list[i].value, 0, 0, 0, 0);
-        if (today > door) {
+        if (today >= door) {
           elem.parentElement.classList.remove("is-locked");
         }
       }
