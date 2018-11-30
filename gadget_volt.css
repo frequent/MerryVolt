@@ -1185,7 +1185,13 @@ background-image:
   .mdl-tabs__content-item,
   .mdl-tabs__content-paragraph {
     font-size: 1.2em;
-  }  
+  }
+}
+@media only screen and (max-width: 32em) {
+  .mdl-tabs__content-item,
+  .mdl-tabs__content-paragraph {
+    text-align: left;
+  }
 }
 .mdl-tabs__content-paragraph {
   margin: 0 1em;
@@ -1236,8 +1242,6 @@ background-image:
     height: 36px;
     width: 36px;
     min-width: 36px;
-    right: -.75em;
-    top: -.75em;
   }
 }
 .volt-dialog__action-share {
