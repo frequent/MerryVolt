@@ -1136,6 +1136,7 @@ background-image:
 .volt-dialog-content .volt-dialog-close-top {
   display: block;
   text-align: right;
+  width: 96%;
 }
 .mdl-tabs__panel.is-active {
   margin-top: -2em;
