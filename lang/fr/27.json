@@ -1,15 +1,6 @@
 {
   "title": "Challenge: Egalité Sociale",
-  "what": [{
-    "lead": "Les citoyens et résidents de l’Union européenne doivent se voir garantir des droits et opportunités égaux,",
-    "text": "et les droits de l’Homme doivent être respectés et appliqués ! Pour s’assurer de cela, nous souhaitons introduire des politiques s’attaquant à tous les types d’inégalités et de discriminations, réduisant la pauvreté et fournissant un accès aux besoin fondamentaux. Plus important encore, personne ne doit être laissé de côté ! Ces politiques comprennent : combler l’écart entre les sexes d’ici 2025, assurer des droits égaux pour tous, et mettre fin au phénomène des sans-abris en Europe."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+  "topic_list": [{
+    "proposal": "Les citoyens et résidents de l’Union européenne doivent se voir garantir des droits et opportunités égaux, et les droits de l’Homme doivent être respectés et appliqués ! Pour s’assurer de cela, nous souhaitons introduire des politiques s’attaquant à tous les types d’inégalités et de discriminations, réduisant la pauvreté et fournissant un accès aux besoin fondamentaux. Plus important encore, personne ne doit être laissé de côté ! Ces politiques comprennent : combler l’écart entre les sexes d’ici 2025, assurer des droits égaux pour tous, et mettre fin au phénomène des sans-abris en Europe."
   }]
 }

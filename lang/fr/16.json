@@ -1,21 +1,19 @@
 {
   "title": "Parlement européen",
-  "what": [{
-    "lead": "Permettre aux Membres du Parlement européen de pouvoir pleinement représenter les intérêts des citoyens",
-    "text": ", en leur accordant le droit d’émettre des propositions de lois. En tant que seule institution européenne élue au suffrage direct, le Parlement européen doit avoir un droit d’initiative, tout comme n’importe quel parlement national."
+  "topic_list": [{
+    "proposal": "Permettre aux Membres du Parlement européen de pouvoir pleinement représenter les intérêts des citoyens, en leur accordant le droit d’émettre des propositions de lois. En tant que seule institution européenne élue au suffrage direct, le Parlement européen doit avoir un droit d’initiative, tout comme n’importe quel parlement national.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Assurer la transparence des travaux du Parlement et empêcher les réécritures de dernière minute ainsi que les accords à huis clos.",
-    "text": "Pour cela, il est nécessaire d’enregistrer tous les votes des Membres du Parlement et de les rendre public. Il faut également instaurer un délai fixe de présentation publique des projets de lois avant qu’ils ne soient votés."
+    "proposal": "Assurer la transparence des travaux du Parlement et empêcher les réécritures de dernière minute ainsi que les accords à huis clos. Pour cela, il est nécessaire d’enregistrer tous les votes des Membres du Parlement et de les rendre public. Il faut également instaurer un délai fixe de présentation publique des projets de lois avant qu’ils ne soient votés.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Assurer une représentation équitable de tous les citoyens de l’Union Européenne",
-    "text": ", et resserrer les liens entre eux et leurs représentants. Cela peut se faire en instaurant les mêmes règles de scrutin pour le Parlement Européen dans toute l’UE et en permettant aux citoyens d’élire localement les Membres du Parlement Européen sur le mode de la proportionnelle."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Assurer une représentation équitable de tous les citoyens de l’Union Européenne , et resserrer les liens entre eux et leurs représentants. Cela peut se faire en instaurant les mêmes règles de scrutin pour le Parlement Européen dans toute l’UE et en permettant aux citoyens d’élire localement les Membres du Parlement Européen sur le mode de la proportionnelle.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }

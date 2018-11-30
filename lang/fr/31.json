@@ -1,27 +1,9 @@
 {
   "title": "Un Souhait",
-  "what": [{
-    "lead": "",
-    "text": ""
-  }, {
-    "lead": "",
-    "text": ""
-  }, {
-    "lead": "",
-    "text": ""
-  }, {
-    "lead": "",
-    "text": ""
-  }, {
-    "lead": "",
-    "text": ""
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+  "topic_list": [{
+    "proposal": "",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }

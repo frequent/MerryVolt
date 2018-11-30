@@ -1,21 +1,19 @@
 {
   "title": "Innovation",
-  "what": [{
-    "lead": "Assurer l’avenir de l’excellence européenne en doublant les dépenses en matière de recherche et développement",
-    "text": "pour atteindre 4% du PIB européen d’ici 2025. Il faut inciter les Etats à investir dans l’innovation pour maîtriser les défis sociaux et environnementaux à venir."
+  "topic_list": [{
+    "proposal": "Assurer l’avenir de l’excellence européenne en doublant les dépenses en matière de recherche et développement pour atteindre 4% du PIB européen d’ici 2025. Il faut inciter les Etats à investir dans l’innovation pour maîtriser les défis sociaux et environnementaux à venir.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Devenir efficace en matière d’intelligence artificielle (IA), ",
-    "text": "en créant une agence européenne de coordination sur l’intelligence artificielle de haut niveau, pour faire converger les esprits les plus brillants et les entreprises de ce secteur. Il est aussi primordial d’instaurer une initiative européenne pour l’IA et d’établir des normes éthiques strictes en matière d’IA."
+    "proposal": "Devenir efficace en matière d’intelligence artificielle (IA), en créant une agence européenne de coordination sur l’intelligence artificielle de haut niveau, pour faire converger les esprits les plus brillants et les entreprises de ce secteur. Il est aussi primordial d’instaurer une initiative européenne pour l’IA et d’établir des normes éthiques strictes en matière d’IA.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Rendre l’intelligence artificielle disponible et accessible à tous, ",
-    "text": "en augmentant le soutien de la Banque européenne d’investissement à l’intelligence artificielle à hauteur d’au moins un milliard d’euros d’ici 2020. Il faudra également mettre en place une “plateforme centralisée d’IA sur demande” pour fournir un unique point d’accès aux ressources clés issues de l’IA dans l’UE."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Rendre l’intelligence artificielle disponible et accessible à tous,  en augmentant le soutien de la Banque européenne d’investissement à l’intelligence artificielle à hauteur d’au moins un milliard d’euros d’ici 2020. Il faudra également mettre en place une “plateforme centralisée d’IA sur demande” pour fournir un unique point d’accès aux ressources clés issues de l’IA dans l’UE.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }

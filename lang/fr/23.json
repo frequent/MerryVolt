@@ -1,18 +1,14 @@
 {
   "title": "Entreprenariat",
-  "what": [{
-    "lead": "Faciliter la création d’entreprise en créant un unique guichet numérique européen. ",
-    "text": "Cela permettra de créer son entreprise en trois jours ouvrés à un coût administratif mineur. En complément, les frais et les procédures de création d’entreprise seront harmonisés. Les rapports, les déclarations fiscales et administratives seront simplifiées partout dans l’UE."
+  "topic_list": [{
+    "proposal": "Faciliter la création d’entreprise en créant un unique guichet numérique européen. Cela permettra de créer son entreprise en trois jours ouvrés à un coût administratif mineur. En complément, les frais et les procédures de création d’entreprise seront harmonisés. Les rapports, les déclarations fiscales et administratives seront simplifiées partout dans l’UE.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Dynamiser l'entreprenariat et la création d’emplois, ",
-    "text": "en augmentant les investissements dans les technologies telles que la blockchain, le big data, l’intelligence artificielle et les clouds afin d’aider ces secteurs stratégiques de l’Europe à devenir compétitifs à l’échelle mondiale."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Dynamiser l'entreprenariat et la création d’emplois, en augmentant les investissements dans les technologies telles que la blockchain, le big data, l’intelligence artificielle et les clouds afin d’aider ces secteurs stratégiques de l’Europe à devenir compétitifs à l’échelle mondiale.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }

@@ -1,18 +1,14 @@
 {
   "title": "Corruption",
-  "what": [{
-    "lead": "Attribuer les financements européens de projet en fonction des efforts nationaux dans la lutte contre la corruption. ",
-    "text": "Les Etats membres oeuvrant dans ce sens verront leurs efforts récompensés, tandis que ceux qui ne s’impliquent pas seront sanctionnés."
+  "topic_list": [{
+    "proposal": "Attribuer les financements européens de projet en fonction des efforts nationaux dans la lutte contre la corruption. Les Etats membres oeuvrant dans ce sens verront leurs efforts récompensés, tandis que ceux qui ne s’impliquent pas seront sanctionnés.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Mettre fin à la corruption",
-    "text": "en accordant de nouvelles prérogatives d’investigation à l’office européen de lutte antifraude (OLAF) et au Parquet européen, et en élargissant les compétences du Médiateur européen pour y inclure la possibilité d’examen en cas de gestion douteuse des fonds publics."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Mettre fin à la corruption en accordant de nouvelles prérogatives d’investigation à l’office européen de lutte antifraude (OLAF) et au Parquet européen, et en élargissant les compétences du Médiateur européen pour y inclure la possibilité d’examen en cas de gestion douteuse des fonds publics.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }

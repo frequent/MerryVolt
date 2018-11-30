@@ -1,15 +1,6 @@
 {
   "title": "Challenge: Renaissance Economique",
-  "what": [{
-    "lead": "Les économies européennes ont besoin de devenir le moteur du progrès de la société",
-    "text": " et permettre un niveau de vie décent pour chacun. Pour atteindre notre but, nous avons établi trois leviers-clés : reconstruire des aires concurrencées économiquement, favoriser le leadership en innovation, et pousser l’Union européenne à devenir une “Union sociale”. Cela requiert des concepts innovants et des politiques pour réduire la bureaucratie, renforcer le marché du travail, raviver l’innovation dans nos économies, investir dans une productivité intelligente et durable, dans le commerce, s’attaquer au chômage et créer un système social et fiscal européen plus unifié."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+  "topic_list": [{
+    "proposal": "Les économies européennes ont besoin de devenir le moteur du progrès de la société  et permettre un niveau de vie décent pour chacun. Pour atteindre notre but, nous avons établi trois leviers-clés : reconstruire des aires concurrencées économiquement, favoriser le leadership en innovation, et pousser l’Union européenne à devenir une “Union sociale”. Cela requiert des concepts innovants et des politiques pour réduire la bureaucratie, renforcer le marché du travail, raviver l’innovation dans nos économies, investir dans une productivité intelligente et durable, dans le commerce, s’attaquer au chômage et créer un système social et fiscal européen plus unifié."
   }]
 }

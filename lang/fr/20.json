@@ -1,24 +1,24 @@
 {
   "title": "Migration de travail",
-  "what": [{
-    "lead": "Protéger les travailleurs nationaux et étrangers contre les effets négatifs de la migration économique, ",
-    "text": "en appliquant une harmonisation minimale entre tous les pays européens pour garantir l'accès aux services sociaux, juridiques et médicaux de base."
+  "topic_list": [{
+    "proposal": "Protéger les travailleurs nationaux et étrangers contre les effets négatifs de la migration économique, en appliquant une harmonisation minimale entre tous les pays européens pour garantir l'accès aux services sociaux, juridiques et médicaux de base.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Faire de l'Europe un pôle de talents et d'innovation, ",
-    "text": "en la simplifiant et en la rendant plus simple et plus attractive pour l'obtention d'un visa d'expert, surtout après l'obtention d'un diplôme universitaire d'un État membre de l'UE."
+    "proposal": "Faire de l'Europe un pôle de talents et d'innovation, en la simplifiant et en la rendant plus simple et plus attractive pour l'obtention d'un visa d'expert, surtout après l'obtention d'un diplôme universitaire d'un État membre de l'UE.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Accroître les voies légales d'entrée en Europe, ",
-    "text": "en développant un visa spécifique qui pourra être mis à la disposition des travailleurs étrangers temporaires."
+    "proposal": "Accroître les voies légales d'entrée en Europe, en développant un visa spécifique qui pourra être mis à la disposition des travailleurs étrangers temporaires.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Veiller à ce que les pays d'origine et les pays européens profitent de la migration économique temporaire, ",
-    "text": "en alignant les intérêts des deux parties et en faisant participer toutes les parties concernées (employeurs et syndicats par exemple) au processus d'élaboration des politiques."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Veiller à ce que les pays d'origine et les pays européens profitent de la migration économique temporaire, en alignant les intérêts des deux parties et en faisant participer toutes les parties concernées (employeurs et syndicats par exemple) au processus d'élaboration des politiques.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }

@@ -32,10 +32,19 @@
     <script id="dialog_template" type="text/x-supplant">
       <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect volt-dialog-content-container">
         <div class="mdl-tabs__tab-bar">{tab_list}</div>
+        <form name="volt-dialog-close" class="volt-dialog-action-form volt-dialog-close-form volt-dialog-close-top">
+          <button type="submit" class="mdl-button volt-dialog-close"><i class="material-icons">close</i></button>
+        </form>
         {content_list}
         <div class="mdl-dialog__actions volt-dialog-actions stale">
+          <form name="volt-dialog-prev" class="volt-dialog-action-form volt-dialog-prev-form">
+            <button type="submit" class="mdl-button volt-dialog-close"><i class="material-icons">chevron_left</i></button>
+          </form>
           <form name="volt-dialog-close" class="volt-dialog-action-form volt-dialog-close-form">
-            <button type="submit" class="mdl-button volt-dialog-close mdl-button--fab"><i class="material-icons">close</i></button>
+            <button type="submit" class="mdl-button volt-dialog-close"><i class="material-icons">close</i></button>
+          </form>
+          <form name="volt-dialog-next" class="volt-dialog-action-form volt-dialog-next-form">
+            <button type="submit" class="mdl-button volt-dialog-close"><i class="material-icons">chevron_right</i></button>
           </form>
           <span data-i18n="Share this proposition:" class="volt-dialog__action-share">Share this proposition:</span>
           <form name="volt-share-facebook" class="volt-dialog-action-form">
@@ -80,14 +89,42 @@
               <i class="volt-lang volt-lang_en"></i>
               <form name="volt-select-language" class="volt-select-language">
                 <input type="hidden" name="volt_language" value="en" />
-                <button type="submit" class="mdl-button mdl-js-button" data-i18n="english">English</button>
+                <button type="submit" class="mdl-button mdl-js-button" data-i18n="english"></button>
               </form>
             </li>
             <li class="mdl-menu__item mdl-menu__item--full-bleed-divider volt-custom-menu-action ">
               <i class="volt-lang volt-lang_fr"></i>
               <form name="volt-select-language" class="volt-select-language">
                 <input type="hidden" name="volt_language" value="fr" />
-                <button type="submit" class="mdl-button mdl-js-button" data-i18n="french">French</button>
+                <button type="submit" class="mdl-button mdl-js-button" data-i18n="french"></button>
+              </form>
+            </li>
+            <li class="mdl-menu__item mdl-menu__item--full-bleed-divider volt-custom-menu-action">
+              <i class="volt-lang volt-lang_de"></i>
+              <form name="volt-select-language" class="volt-select-language">
+                <input type="hidden" name="volt_language" value="en" />
+                <button type="submit" class="mdl-button mdl-js-button" data-i18n="german"></button>
+              </form>
+            </li>
+            <li class="mdl-menu__item mdl-menu__item--full-bleed-divider volt-custom-menu-action">
+              <i class="volt-lang volt-lang_dk"></i>
+              <form name="volt-select-language" class="volt-select-language">
+                <input type="hidden" name="volt_language" value="dk" />
+                <button type="submit" class="mdl-button mdl-js-button" data-i18n="danish"></button>
+              </form>
+            </li>
+            <li class="mdl-menu__item mdl-menu__item--full-bleed-divider volt-custom-menu-action">
+              <i class="volt-lang volt-lang_it"></i>
+              <form name="volt-select-language" class="volt-select-language">
+                <input type="hidden" name="volt_language" value="it" />
+                <button type="submit" class="mdl-button mdl-js-button" data-i18n="italian"></button>
+              </form>
+            </li>
+            <li class="mdl-menu__item mdl-menu__item--full-bleed-divider volt-custom-menu-action">
+              <i class="volt-lang volt-lang_es"></i>
+              <form name="volt-select-language" class="volt-select-language">
+                <input type="hidden" name="volt_language" value="es" />
+                <button type="submit" class="mdl-button mdl-js-button" data-i18n="spanish"></button>
               </form>
             </li>
           </ul>
@@ -126,7 +163,7 @@
             <p class="volt-introductory-paragraph" data-i18n="and since there are more propositions">and since there are more propositions, we just continue until year's end.</p>
           </div>
           <div class="day-1 xmas-day">
-            <label class="xmas-door_frame">
+            <label class="xmas-door_frame is-locked">
               <input type="radio" name="xmas" value="1" class="xmas-input" >
                 <div class="xmas-door">
             			<h2 class="xmas-door_date"><span class="volt-count">1</span><span class="volt-spoiler" data-i18n="Asylum Seekers and Refugees">Demandeurs d’asile et réfugiés</span></h2>

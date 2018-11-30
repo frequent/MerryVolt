@@ -1,21 +1,19 @@
 {
   "title": "Le Programme Volta",
-  "what": [{
-    "lead": "Etablir le “Programme Volta” européen, ",
-    "text": "qui fournira un soutien financier global pour tout type de formation, en particulier la reconversion et la formation continue."
+  "topic_list": [{
+    "proposal": "Etablir le “Programme Volta” européen, qui fournira un soutien financier global pour tout type de formation, en particulier la reconversion et la formation continue.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Faciliter les études et le travail n’importe où en Europe, ",
-    "text": "en améliorant la transparence et la valorisation des connaissances et des compétences."
+    "proposal": "Faciliter les études et le travail n’importe où en Europe, en améliorant la transparence et la valorisation des connaissances et des compétences.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Améliorer l’acquisition des compétences digitales à tout âge, ",
-    "text": "en enseignant tôt la maîtrise d’internet et l’apprentissage du code."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Améliorer l’acquisition des compétences digitales à tout âge, en enseignant tôt la maîtrise d’internet et l’apprentissage du code.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }

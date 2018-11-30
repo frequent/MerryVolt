@@ -7,6 +7,7 @@
   // parameters
   /////////////////////////////
   var STR = "";
+  var ACTIVE = "is-active";
   var KLASS = rJS(window);
   var CANVAS = "canvas";
   var ARR = [];
@@ -186,7 +187,7 @@
         SOCIAL_MEDIA_CONFIG[my_scm].supplant({
           "url": encodeURIComponent(LOCATION.href),
           "text":"",
-          "tag_list": "#VoteVolt"
+          "tag_list": "VoteVolt,Europe"
         }),
         is_mobile.matches ? BLANK : STR,
         is_mobile.matches ? null : POPPER
@@ -220,7 +221,7 @@
           for (i = 0; i < my_data.topic_list.length; i += 1) {
             topic = my_data.topic_list[i];
             topic.id = i + 1;
-            topic.active = i === 0 ? "is-active" : STR;
+            topic.active = i === 0 ? ACTIVE : STR;
             topic.title = my_data.title;
             topic.slug = topic.proposal.substring(0,10).split(" ").join("-").toLowerCase();
             tab_head += getTemplate(KLASS, "dialog_tab_header").supplant(topic);
@@ -312,6 +313,29 @@
         });
     })
 
+    .declareMethod("switchTab", function (dir) {
+      var gadget = this;
+      var elem = gadget.element;
+      var tabs = elem.querySelectorAll(".mdl-tabs__tab");
+      var panels = elem.querySelectorAll(".mdl-tabs__panel");
+      var i;
+      var len;
+      var index;
+      for (i = 0, len = tabs.length; i < len; i += 1) {
+        if (tabs[i].classList.contains(ACTIVE)) {
+          if (dir === 1) {
+            index = tabs[i + 1] ? i + 1 : 0;  
+          } else {
+            index = tabs[i - 1] ? i - 1 : len - 1;
+          }
+          tabs[i].classList.remove(ACTIVE);
+          panels[i].classList.remove(ACTIVE);
+        }
+      }
+      tabs[index].classList.add(ACTIVE);
+      panels[index].classList.add(ACTIVE);
+    })
+
     // -------------------.--- Render ------------------------------------------
     .declareMethod("render", function (my_option_dict) {
       var gadget = this;
@@ -349,7 +373,7 @@
       var len = radio_list.length;
       for (i = 0; i < len; i += 1) {
         elem = radio_list[i];
-        door = new Date(2017, 12, radio_list[i].value, 0, 0, 0, 0);
+        door = new Date(2018, 12, radio_list[i].value, 0, 0, 0, 0);
         if (today > door) {
           elem.parentElement.classList.remove("is-locked");
         }
@@ -385,6 +409,10 @@
       switch (event.target.getAttribute(NAME)) {
         case "volt-dialog-close":
           return this.handleDialog();
+        case "volt-dialog-prev":
+          return this.switchTab(-1);
+        case "volt-dialog-next":
+          return this.switchTab(1);
         case "volt-share-facebook":
           return this.shareUrl("facebook");
         case "volt-share-twitter":

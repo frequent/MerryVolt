@@ -843,14 +843,16 @@ background-image:
 }
 .volt-spoiler {
   font-size: .25em;
-  display: none;
+  display: block;
   line-height: 1em;
-  padding-top: 3em;
+  margin-top: -2em;
+  margin-right: auto;
+  max-width: 8em;
+  margin-left: auto;
+  text-shadow: 0 1px 0 rgba(255,255,255,.7);
+  text-align: center;
 }
-.xmas-door_frame:hover .volt-count {
-  display: none;
-}
-.xmas-door_frame:hover .volt-spoiler {
+.volt-count {
   display: block;
 }
 .xmas-door_frame:not(.is-locked):hover {
@@ -981,7 +983,8 @@ background-image:
 }
 .day-24 .xmas-door_date {
   font-size: 80px;
-  line-height: 3em;
+  line-height: 2em;
+  margin-top: .5em;
 }
 .day-24 .is-locked:before {
   text-indent: 3.5em;
@@ -1047,10 +1050,6 @@ background-image:
   font-weight: 700;
   color: #612095;
 }
-.day-24 .xmas-door_date {
-  font-size: 80px;
-  line-height: 3em;
-}
 @media only screen and (max-width: 48em) {
   .day-24 .xmas-door_date {
     font-size: 45px;
@@ -1099,9 +1098,13 @@ background-image:
   top: 25%;
   height: auto;
   min-height: 20em;
-  border-radius: 0;
   background-color: #fff;
   border-radius: 1em;
+  overflow-y: scroll; 
+  -webkit-overflow-scrolling: touch;
+}
+.volt-dialog-active volt-dialog-content {
+  min-height: calc(100% + 100px);
 }
 @media only screen and (max-width: 48em) {
   .volt-dialog-active {
@@ -1124,18 +1127,15 @@ background-image:
 .volt-dialog-content {
   padding: 0;
 }
-.volt-dialog-close {
-  position: absolute;
-  top: -1em;
-  right: -1em;
-  background: #fff;
-  z-index: 1005;
-}
-.volt-dialog-close:hover {
-  background: #fff;
-}
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
   background-color: transparent;
+}
+.volt-dialog-content .volt-dialog-close-top {
+  display: block;
+  text-align: right;
+}
+.mdl-tabs__panel.is-active {
+  margin-top: -2em;
 }
 .mdl-tabs__tab {
   font-size: 1.5em;
@@ -1158,6 +1158,8 @@ background-image:
 }
 .mdl-tabs__tab {
   border-right: 2px solid #fff;
+  box-sizing: border-box;
+  width: 100%;
 }
 .mdl-tabs__tab:last-child {
     border-right-width: 0;
@@ -1207,9 +1209,6 @@ background-image:
     text-align: center;
   }
 }
-.volt-dialog-close-form {
-  height: 0;
-}
 .volt-dialog-action-form {
   display: inline-block;
   vertical-align: top;
@@ -1224,6 +1223,14 @@ background-image:
 @media only screen and (max-width: 48em) {
   .volt-dialog-action-form .mdl-button {
     height: 36px;
+    width: 52px;
+    top: .3em;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 32em) {
+  .volt-dialog-action-form .mdl-button {
+    height: 36px;
     width: 36px;
     min-width: 36px;
     right: -.75em;
@@ -1232,11 +1239,11 @@ background-image:
 }
 .volt-dialog__action-share {
   height: 48px;
+  line-height: 42px;
   font-family: Ubuntu;
   color: #612095;
   vertical-align: middle;
   display: inline-block;
-  line-height: 42px;
 }
 @media only screen and (max-width: 32em) {
   .mdl-dialog__actions > .volt-dialog__action-share,
@@ -1245,6 +1252,7 @@ background-image:
   }
   .volt-dialog__action-share {
     display: block;
+    line-height: 42px;
     margin-left: auto;
     text-align: left;
     width: auto;
@@ -1282,6 +1290,17 @@ background-image:
 .volt-lang_fr {
   background-position: 0 -64px;
 }
+.volt-lang_it {
+  background-position: 0 -96px;
+}
+.volt-lang_es {
+  background-position: -160px -32px
+}
+.volt-lang_dk {
+  background-position: -96px -32px;
+}
+
+
 .volt-custom-menu-action {
   padding: 0;
 }

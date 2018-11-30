@@ -1,21 +1,19 @@
 {
   "title": "Transparence",
-  "what": [{
-    "lead": "Améliorer la transparence de l’UE, ",
-    "text": "en exigeant que les élus divulguent les frais et dépenses de leur cabinet."
+  "topic_list": [{
+    "proposal": "Améliorer la transparence de l’UE, en exigeant que les élus divulguent les frais et dépenses de leur cabinet.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Protéger la presse et les lanceurs d’alertes, ",
-    "text": "en instaurant des directives strictes qui restreignent les sanctions pouvant être infligées par les gouvernements en cas de publication d’informations confidentielles dans l’intérêt public."
+    "proposal": "Protéger la presse et les lanceurs d’alertes, en instaurant des directives strictes qui restreignent les sanctions pouvant être infligées par les gouvernements en cas de publication d’informations confidentielles dans l’intérêt public.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }, {
-    "lead": "Veiller à ce que tous les lobbies actifs auprès des institutions européennes soient transparents et contrôlés. ",
-    "text": "L’inscription de toute activité de lobbying dans le registre public prévu à cet effet sera obligatoire et un code de conduite strict sera établi."
-  }],
-  "why": [{
-    "lead": "",
-    "text": ""
-  }],
-  "how": [{
-    "lead": "",
-    "text": ""
+    "proposal": "Veiller à ce que tous les lobbies actifs auprès des institutions européennes soient transparents et contrôlés. L’inscription de toute activité de lobbying dans le registre public prévu à cet effet sera obligatoire et un code de conduite strict sera établi.",
+    "why": "",
+    "how": "",
+    "funding": ""
   }]
 }
