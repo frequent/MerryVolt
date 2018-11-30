@@ -820,7 +820,7 @@ background-image:
     content: "\E899";
     position: absolute;
     height: 24px;
-    top: 55%;
+    top: 42%;
     z-index: 1;
     font-size: 2em;
     left: 0;
@@ -849,7 +849,6 @@ background-image:
   margin-right: auto;
   max-width: 8em;
   margin-left: auto;
-  text-shadow: 0 1px 0 rgba(255,255,255,.7);
   text-align: center;
 }
 .volt-count {
@@ -980,6 +979,8 @@ background-image:
   font-family: "Ubuntu";
   font-weight: 700;
   color: #612095;
+  margin-top: 12px;
+  margin-bottom: 24px;
 }
 .day-24 .xmas-door_date {
   font-size: 80px;
@@ -988,6 +989,7 @@ background-image:
 }
 .day-24 .is-locked:before {
   text-indent: 3.5em;
+  top: 52%;
 }
 @media only screen and (max-width: 48em) {
   .day-24 .xmas-door_date {
@@ -996,6 +998,7 @@ background-image:
   }
   .day-24 .is-locked:before {
     text-indent: 2.5em;
+    top: 48%;
   }
 }
 .xmas-door_clear {

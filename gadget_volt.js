@@ -88,6 +88,7 @@
       "type": "volt_storage",
       "repo": "MerryVolt",
       "path": "lang/" + my_language
+      //"__debug": "https://softinst73904.host.vifib.net/xmas/lang/" + my_language + "/debug.json"
     };
   }
 
