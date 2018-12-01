@@ -20,6 +20,7 @@
   var INTERSECTION_OBSERVER = window.IntersectionObserver;
   var TEMPLATE_PARSER = /\{([^{}]*)\}/g;
   var POPPER = "width=600,height=480,resizable=yes,scrollbars=yes,status=yes";
+  var LANG = "https://raw.githubusercontent.com/VoltEuropa/MerryVolt/master/lang/";
   var SOCIAL_MEDIA_CONFIG = {
     "facebook": "https://www.facebook.com/sharer.php?u={url}",
     "twitter": "https://twitter.com/intent/tweet?url={url}&text={text}&hashtags={tag_list}"
@@ -82,6 +83,30 @@
   function getLang(nav) {
     return (nav.languages ? nav.languages[0] : (nav.language || nav.userLanguage));
   }
+  /*
+  function waitForServiceWorkerActive(registration) {
+    var serviceWorker;
+    if (registration.installing) {
+      serviceWorker = registration.installing;
+    } else if (registration.waiting) {
+      serviceWorker = registration.waiting;
+    } else if (registration.active) {
+      serviceWorker = registration.active;
+    }
+    if (serviceWorker.state !== "activated") {
+      return RSVP.Promise(function (resolve, reject) {
+        serviceWorker.addEventListener('statechange', function (e) {
+          if (e.target.state === "activated") {
+            resolve();
+          }
+        });
+        RSVP.delay(500).then(function () {
+          reject(new Error("Timeout service worker install"));
+        });
+      });
+    }
+  }
+  */
 
   function getConfig(my_language) {
     return {
@@ -98,8 +123,9 @@
     // state
     /////////////////////////////
     .setState({
-      "locale": getLang(window.navigator).substring(0, 2),
-      "online": null
+      "locale": getLang(window.navigator).substring(0, 2) || "en",
+      "online": null,
+      "sw_errors": 0
     })
 
     /////////////////////////////
@@ -149,10 +175,38 @@
       return this.route(VOLT, "allDocs");
     })
 
-   .declareMethod("stateChange", function (delta) {
+    /*
+    .declareMethod("installServiceWorker", function () {
+      var gadget = this;
+      if (navigator.serviceWorker === undefined) {
+        return;
+      }
+      return new RSVP.Queue()
+        .push(function () {
+          return navigator.serviceWorker.register("serviceworker.js");
+        })
+        .push(function (registration) {
+          return waitForServiceWorkerActive(registration);
+        })
+        .push(null, function (error) {
+          return new RSVP.Queue()
+            .push(function () {
+              return gadget.stateChange("sw_errors", gadget.state.sw_errors + 1);
+            })
+            .push(function () {
+              return RSVP.delay(1000);
+            })
+            .push(function () {
+              return gadget.installServiceWorker();
+            });
+        });
+    })
+    */
+
+    .declareMethod("stateChange", function (delta) {
       var gadget = this;
       var state = gadget.state;
-
+  
       if (delta.hasOwnProperty("locale")) {
         state.locale = delta.locale;
       }
@@ -164,8 +218,11 @@
           gadget.element.classList.add("volt-offline");
         }
       }
+      //if (delta.hasOwnProperty("sw_errors")) {
+      //  state.sw_errors = delta.sw_errors;
+      //}
       return;
-   })
+    })
 
     // thx: https://css-tricks.com/simple-social-sharing-links/
     // twitter prevalidate url: https://cards-dev.twitter.com/validator
@@ -310,6 +367,17 @@
           my_file_list.data.rows.map(function (row) {
             dict.url_dict[row.id.split("/").pop().replace(".json", "")] = row.id;
           });
+        })
+
+        // we only need a language to build the dict, so in case of errors like
+        // on OS X/Safari 9, which cannot handle Github APIv3 redirect, we just
+        // build the damn thing by hand... and fail somewhere else
+        .push(undefined, function(whatever) {
+          var i;
+          for (i = 1; i < 32; i += 1) {
+            dict.url_dict[i] = LANG + gadget.state.locale + "/" + i + ".json";
+          }
+          dict.url_dict["ui"] = LANG + gadget.state.locale + "/ui.json";
         });
     })
 
@@ -392,6 +460,7 @@
         return gadget.stateChange({"online": window.navigator.onLine});
       }
       return RSVP.all([
+        //gadget.installServiceWorker(),
         listener(window, "online", false, handleConnection),
         listener(window, "offline", false, handleConnection),
       ]);
@@ -423,6 +492,31 @@
           return this.updateStorage(event.target.volt_language.value);
       }
     })
+
+    /*
+    .onEvent("beforeinstallprompt", function (event) {
+      var gadget = this;
+      var deferredPrompt;
+      var btn = getElem(gadget.element, ".volt-homescreen-flag");
+
+      function handleClick(my_click_event) {
+        btn.style.display = "none";
+        deferredPrompt.prompt();
+        deferredPrompt.userChose.then(function (choise_result) {
+          deferredPrompt = null;
+          if (choise_result.outcome === 'accepted') {
+            return;  
+          }
+          return;
+        });
+      }
+
+      event.preventDefault();
+      btn.style.display = "block";
+      deferredPrompt = e;
+      return window.loopEventListener(btn, "click", false, handleClick);
+    }, false, false)
+    */
 
     .onEvent("keydown", function (event) {
       if (event.key === "Escape" || event.key === "Esc" || event.keyCode === 27) {
