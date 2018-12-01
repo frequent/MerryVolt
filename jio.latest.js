@@ -12638,7 +12638,7 @@ return new Parser;
         if (response.target.status === 404) {
           return [];
         }
-        throw error;
+        throw response;
       });
   };
 
