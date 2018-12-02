@@ -242,7 +242,7 @@
 
       popup = window.open(
         SOCIAL_MEDIA_CONFIG[my_scm].supplant({
-          "url": encodeURIComponent(LOCATION.href),
+          "url": window.encodeURIComponent(LOCATION.href),
           "text":"",
           "tag_list": "VoteVolt,Europe"
         }),
@@ -280,7 +280,9 @@
             topic.id = i + 1;
             topic.active = i === 0 ? ACTIVE : STR;
             topic.title = my_data.title;
-            topic.slug = topic.proposal.substring(0,10).split(" ").join("-").toLowerCase();
+            topic.slug = window.encodeURIComponent(
+              topic.proposal.substring(0,10).split(" ").join("-").toLowerCase()
+            );
             tab_head += getTemplate(KLASS, "dialog_tab_header").supplant(topic);
             tab_content += getTemplate(KLASS, "dialog_tab_content").supplant(topic);
           }
