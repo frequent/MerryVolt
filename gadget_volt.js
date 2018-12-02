@@ -1,6 +1,6 @@
 /*jslint nomen: true, indent: 2, maxlen: 80 */
-/*global window, rJS, RSVP */
-(function (window, rJS, RSVP) {
+/*global window, rJS, RSVP, Math */
+(function (window, rJS, RSVP, Math) {
     "use strict";
 
   /////////////////////////////
@@ -280,9 +280,10 @@
             topic.id = i + 1;
             topic.active = i === 0 ? ACTIVE : STR;
             topic.title = my_data.title;
-            topic.slug = window.encodeURIComponent(
-              topic.proposal.substring(0,10).split(" ").join("-").toLowerCase()
-            );
+            topic.slug = "tab-" + Math.round(Math.random()*1000000,0);
+            //window.encodeURIComponent(
+            //  topic.proposal.substring(0,10).split(" ").join("-").toLowerCase()
+            //);
             tab_head += getTemplate(KLASS, "dialog_tab_header").supplant(topic);
             tab_content += getTemplate(KLASS, "dialog_tab_content").supplant(topic);
           }
@@ -527,4 +528,4 @@
     }, false, false);
 
 
-}(window, rJS, RSVP));
+}(window, rJS, RSVP, Math));
