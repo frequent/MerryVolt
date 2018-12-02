@@ -860,7 +860,6 @@ background-image:
 .xmas-door_frame:not(.is-locked):hover .xmas-input:not(:checked) + .xmas-door {
   border-color: #fff;
 }
-
 .volt-offline-flag {
   display: none;
 }
@@ -1103,10 +1102,20 @@ background-image:
   min-height: 20em;
   background-color: #fff;
   border-radius: 1em;
-  overflow-y: scroll; 
+  /*overflow: scroll;
   -webkit-overflow-scrolling: touch;
+  */
 }
+.volt-dialog-active ~ .mdl-layout__container .volt-page-content {
+  overflow: hidden;
+}
+/*
 .volt-dialog-active volt-dialog-content {
+  min-height: calc(100% + 100px);
+}
+*/
+.volt-dialog-active {
+  min-height: auto;
   min-height: calc(100% + 100px);
 }
 @media only screen and (max-width: 48em) {
