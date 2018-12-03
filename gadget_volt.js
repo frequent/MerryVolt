@@ -435,21 +435,10 @@
     // declared service
     /////////////////////////////
     .declareService(function () {
-      var gadget = this;      
-      var today = new Date();
-      var radio_list = gadget.element.querySelectorAll("input[name=xmas]");
-      var door;
-      var elem;
-      var i;
-      var len = radio_list.length;
-      for (i = 0; i < len; i += 1) {
-        elem = radio_list[i];
-        door = new Date(2018, 12, radio_list[i].value, 0, 0, 0, 0);
-        if (today >= door) {
-          elem.parentElement.classList.remove("is-locked");
-        }
-      }
-      DOCUMENT.body.classList.remove("volt-splash");     
+      var body = DOCUMENT.body;
+      var seo = body.querySelector(".volt-seo-content");
+      seo.parentElement.removeChild(seo);
+      body.classList.remove("volt-splash");     
     })
 
     /////////////////////////////
