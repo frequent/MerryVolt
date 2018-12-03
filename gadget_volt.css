@@ -864,7 +864,8 @@ background-image:
   display: none;
 }
 .grid-1 .xmas-input,
-.xmas-door_unset {
+.xmas-door_unset,
+.volt-credits {
   position: absolute !important;
 	height: 1px;
 	width: 1px;
