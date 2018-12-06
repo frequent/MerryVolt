@@ -864,13 +864,18 @@ background-image:
   display: none;
 }
 .grid-1 .xmas-input,
-.xmas-door_unset,
-.volt-credits {
+.xmas-door_unset {
   position: absolute !important;
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
 	clip: rect(1px,1px,1px,1px);
+}
+.volt-credits,
+.volt-credits-link {
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
 }
 .volt-offline .volt-offline-flag {
   display: block;
