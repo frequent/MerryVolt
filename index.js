@@ -7,6 +7,7 @@
   // parameters
   /////////////////////////////
   var OPTION_DICT = {};
+  var URL = "https://www.volteuropa.org/";
   
   /////////////////////////////
   // methods
@@ -50,6 +51,8 @@
         tag = tag_list[i];
         tag.textContent = dictionary[tag.getAttribute('data-i18n')];
       }
+      // Sonderlocke
+      gadget.element.querySelector('[data-i19n]').setAttribute("href", dictionary[URL]);
     })
 
     /////////////////////////////
@@ -62,7 +65,7 @@
           return my_volt_gadget.render(OPTION_DICT);
         })
         .push(null, function (my_error) {
-          throw my_error;
+          //throw my_error;
 
           // poor man's error handling
           var fragment = window.document.createDocumentFragment();
