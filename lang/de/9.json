@@ -1,24 +1,14 @@
 {
-  "title": "",
-  "topic_list": [{
-    "proposal": "",
-    "why": "",
-    "how": "",
-    "funding": ""
-  }, {
-    "proposal": "",
-    "why": "",
-    "how": "",
-    "funding": ""
-  }, {
-    "proposal": "",
-    "why": "",
-    "how": "",
-    "funding": ""
-  }, {
-    "proposal": "",
-    "why": "",
-    "how": "",
-    "funding": ""
-  }]
+ "title": "Mündige Bürgerinnen und Bürger",
+ "topic_list": [{
+   "proposal": "Die Demokratie von morgen durch die Bildung von heute stärken. Die Mitgliedstaaten müssen in ihren Lehrplänen Themen wie Medienbildung, bürgerrechtliche Bildung und Kenntnisse über EU-Institutionen stärker betonen. So werden die Bürger motiviert, sich aktiv im öﬀentlichen Leben zu engagieren.",
+   "why": "Die soziale und wirtschaftliche Integration sind wichtige Voraussetzungen für eine lebendige und dynamische Demokratie. Um das bürgerliche Engagement und den sozialen Zusammenhalt zu fördern, muss unser Bildungssystem mehr Möglichkeiten zur persönlichen Entwicklung bieten: Vor allem in den Sekundarschulen müssen wir den Schwerpunkt verstärkt auf das Erlernen von Lebensfertigkeiten und -kompetenzen legen, insbesondere Medienkompetenz und Staatsbürgerkunde. Die Staatsbürgerkunde sollte Werte wie Demokratie, Menschenrechte, Freiheit, Toleranz und Frieden hervorheben und Fähigkeiten wie Empathie und kritisches Denken fördern. Wir müssen zunehmend über Lebensfertigkeiten und -kompetenzen aus internationaler und EU-Perspektive nachdenken.",
+   "how": "Im Europäischen Parlament werden wir im Rahmen des ordentlichen Gesetzgebungsverfahrens daran arbeiten, Anreize gemäß Artikel 165 (4) AEUV erster Absatz in Form von Beschlüssen und Verordnungen zu schaffen, die die nationalen Regierungen zum Angebot von Programmen zur Bürgerbildung in den nationalen Lehrplänen ermutigen, wobei die Verantwortung der Mitgliedstaaten für die Übernahme der spezifischen Inhalte zu respektieren ist. Volt will die Initiative 'EU in der Schule lernen' aus dem Jahr 2013 verbessern und erweitern. Die Etablierung einer europäischen Bildungsdimension beinhaltet: 1) Die Festlegung von Schlüsselkompetenzen und -fähigkeiten für Schüler; 2) Schulungen für Lehrer von Grund- und Sekundarschulen zur Förderung des kritischen Denkens, der Medienkompetenz und der Kenntnisse zu der gegenwärtigen komplexen demokratischen und politischen Landschaft Europas, z.B. durch Konferenzen und einen häufigen Austausch zwischen Lehrern aus verschiedenen EU-Mitgliedstaaten, um aktuelle Praktiken, Probleme und Lösungen in Europa zu teilen. Darüber hinaus müssen in den Grund- und Sekundarschulen der EU-Mitgliedstaaten Programme zur Medienkompetenz angeboten werden, die die Theorie, ein 'Learning by Doing'-Element und bewährte Praktiken beinhalten, um das kritische Denken der Schüler zu fördern. Ebenso wichtig ist das lebenslange Lernen außerhalb der Schule: Je nach Berufsfeld werden Workshops angeboten, in denen die Bürger darüber informiert werden, wie sich aktuelle EU-Vorschriften auf ihren Berufsbereich auswirken könnten und wie sie selbst als EU-Bürger Einfluss auf diese Vorschriften nehmen können. Schließlich sollte eine europäische Überwachungsstelle eingerichtet werden, die einen PISA-ähnlichen Test beinhaltet, der die Lebensfertigkeiten und -kompetenzen der EU-Bürger in der Grund-, Mittel- und Hochschulbildung bewertet.",
+   "funding": "Die Programme “Europa für Bürgerinnen und Bürger” und “Erasmus+” stellen eine angemessene Finanzierung bereit. Die Regulierungsvorschläge erzeugen keine Kosten für den EU-Haushalt."
+ }, {
+   "proposal": "Echt europäische, vertrauenswürdige Nachrichten verfügbar machen, durch die Einführung einer gemeinsamen europäischen öﬀentlichen Rundfunk- und Medienplattform. So soll der Zugang der europäischen Bürgerinnen und Bürger zu eﬀektiver Informationsbeschaﬀung gesichert werden.",
+   "why": "Die Verbreitung von Informationen ist nicht nur eine Frage von wirtschaftlicher Relevanz für Märkte und Verbraucher. Vielmehr ist die Verbreitung von Informationen über öffentliche Medien eine Frage von kultureller und demokratischer Bedeutung für die Bürger. Die Bürger müssen in der Lage sein, Informationen auf der Ebene und aus der Perspektive, in der sie sich befinden, zu bewerten. Das betrifft nicht nur die lokale, regionale und nationale Ebene, sondern auch die europäische. Informationen und Nachrichten und ihre Verbreitung sind nicht auf geografische Bereiche beschränkt. Daher muss es neben den nationalen öffentlichen Medien eine europäische Plattform geben, um die Verbreitung und den Austausch von Informationen zu erleichtern. Dies sorgt nicht nur eine größere Offenheit auf europäischer Ebene, sondern bietet den Bürgern auch eine andere Möglichkeit, ihre Informationen aus verschiedenen Blickwinkeln zu bewerten. ",
+   "how": "Um den Zielen sowohl in Artikel 165 (Bildung) als auch in Artikel 167 (Kultur) AEUV und im Rahmen des Programms “Kreatives Europa” gerecht zu werden, muss die EU Anreize schaffen, um den Informationsaustausch zwischen den nationalen Nachrichtenagenturen und -verteilern zu erleichtern. Dazu gehören unter anderem die Übersetzung nationaler Inhalte (1), die Ergänzung der nationalen Plattformen für öffentliche Medien durch die Einrichtung einer Europäischen Plattform zur Sammlung und Verbreitung von Nachrichten und Informationen aus ganz Europa an die verschiedenen nationalen Medien (2a) und die Verbreitung von Informationen über ihre eigenen Medienplattformen (Fernsehen, Radio und Internet) (2b). Die Plattform wird sich insbesondere mit der Erweiterung des Wissens über die europäische Kultur, Geschichte und ihre Vielfalt befassen und als Plattform für Kunst und Literatur und den Austausch in ganz Europa dienen (3).",
+   "funding": "Das Programm “Kreatives Europa”, das Programm “Europa für Bürgerinnen und Bürger” und die Fazilität “Connecting Europe” können für die Finanzierung genutzt werden."
+ }]
 }
