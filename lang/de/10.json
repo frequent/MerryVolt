@@ -1,24 +1,14 @@
 {
-  "title": "",
-  "topic_list": [{
-    "proposal": "",
-    "why": "",
-    "how": "",
-    "funding": ""
-  }, {
-    "proposal": "",
-    "why": "",
-    "how": "",
-    "funding": ""
-  }, {
-    "proposal": "",
-    "why": "",
-    "how": "",
-    "funding": ""
-  }, {
-    "proposal": "",
-    "why": "",
-    "how": "",
-    "funding": ""
-  }]
+ "title": "Smart Energy",
+ "topic_list": [{
+  "proposal": "Wachstum der umweltfreundlichen Wirtschaft, durch die Einführung einer EU-weiten Besteuerung von Kohlenstoﬀemissionen sowie weiterer Formen der Kohlenstoﬀ-Besteuerung entlang der gesamten Wertschöpfungskette und durch den Stopp von Subventionen für fossile Brennstoﬀe. Die Einnahmen sollen eingesetzt werden um die schädlichen Auswirkungen des Klimawandels zu begrenzen, klimaschutzrelevante Anpassungen vorzunehmen, sowie neue Arbeitsplätze zu schaﬀen.",
+  "why": "Mehrere Klimaberichte unterstreichen, dass wir nicht genug tun, um die globale Erwärmung aufzuhalten. Statt nur Anreize zur CO2-Reduzierung zu geben, muss die europäische Politik dazu übergehen, den tatsächlichen CO2-Ausstoß zu besteuern. Europa hat die Ressourcen und die Technologie, eine führende Rolle in der Drosselung des CO2-Ausstoßes zu übernehmen und so den Klimawandel zu verhindern, ohne seine internationale Wettbewerbsfähigkeit zu verringern.",
+  "how": "Wir werden den Vorschlag einbringen, die Energiesteuerrichtlinie der EU zu novellieren, um eine Kohlenstoffsteuer auf den Gebieten einzuführen, die noch nicht in den Emissionshandel einbezogen sind, v.a. fossile Brennstoffe im Transport und in der Gebäudeheizung. Dieser Vorschlag wird den europäischen Ländern abverlangen, eine Mindestbesteuerung auf fossile Brennstoffe einzuführen. Zusätzlich werden wir vorschlagen, für die europäischen CO2-Emissionszertifikate einen Mindestpreis einzuführen (50 € pro Tonne im Jahr 2025), um durch langfristige Preisstabilität die Entwicklung sauberer Technologien und entsprechende Investitionen zu ermöglichen. Als weitere Schritte schlagen wir vor, die unentgeltlich verteilten Emissionszertifikate zu reduzieren und die in der Carbon-Leakage-Liste festgelegten Zuteilungsmengen zu überprüfen. Außerdem wollen den Vorschlag einbringen, die Energiesteuerrichtlinie derart zu verändern, dass fossile Brennstoffe nicht länger steuerbefreit sein können und dass Subventionen auslaufen.",
+  "funding": "Dieser Vorschlag verursacht keine Kosten im EU-Haushalt."
+ }, {
+  "proposal": "Energie intelligent verwenden, mittels intelligenter Stromversorgungsnetze, durch ehrgeizige Zielvorgaben der Energieeinsparung und durch Anreize für die Nutzung umweltfreundlicher öﬀentlicher Transportmittel mit niedrigem Energieverbrauch.",
+  "why": "Der Klimawandel fordert bedingungslos ehrgeizige Ziele beim Energieverbrauch. Unser Versorgungssystem muss mit Energieschwankungen umgehen können und eine dezentrale Energieerzeugung ermöglichen. Auf derselben Linie liegt die Forderung, den Transport allgemein auf niedrige Luftverschmutzung umzustellen und effiziente Infrastrukturen zu errichten, die in der Lage sind, den Bedarf mit dem geringstmöglichen ökologischen Fußabdruck zu decken.",
+  "how": "Wir werden beantragen, die Verpflichtungen des Pariser Abkommens durch ehrgeizigere Klimaziele und saubere Energieversorgungsziele zu erfüllen. Dabei wollen wir über die 40%ige Reduzierung der Emissionen hinausgehen, die in der europaweiten Nationally Determined Contributions (“national festgelegte Beiträge”) als Ziel definiert wurden. Volt wird vorschlagen, in der EU-Energie-Effizienz-Richtline und der Erneuerbare-Energien-Richtlinie ehrgeizigere Ziele festzuschreiben; für das Jahr 2030 wollen wir uns eine Emissionsreduzierung von 55 % als Ziel überarbeiteter national festgelegter Beiträge einsetzen sowie für 40% höhere Energieeffizienz und einen Anteil erneuerbarer Energien von 45%. Wir verfolgen das Ziel, die Emissionen im Transportsektor zu senken, indem internationale Frachttransporte - abgesehen von den letzten Kilometern - von der Straße genommen werden. So wollen wir die Verkehrsbelastung und die Luftverschmutzung reduzieren. Außerdem wollen wir überlegen, wie Fördermittel für den Güterverkehr von nicht-autarken Einrichtungen wie Flughäfen zunehmend auf schadstoffarme Infrastrukturen verlagert werden können. Mit einem Gesetzesvorschlag wollen wir die gemeinsame Nutzung alternativer Energien fördern, die in europäischen Ländern erzeugt werden. Diese Vorlage soll einheitliche Richtwerte enthalten, um die Errichtung eines einheitlichen EU-weiten Netzwerks von Flüssigerdgas- und Wasserstofftankstellen zu erleichtern.",
+  "funding": "Um die nötige Zusammenarbeit unter den europäischen Ländern zu verwirklichen und ein einheitliches Netzwerk von Energieerzeugern zu errichten, wollen wir uns auf den Europäischen regionalen Entwicklungsfond stützen. Die Struktur- und Kohäsionsfonds sollen genutzt werden, um die Fördermittel für den Güterverkehr zu überprüfen und zu verlagern."
+ }]
 }
