@@ -113,7 +113,7 @@
       "type": "volt_storage",
       "repo": "MerryVolt",
       "path": "lang/" + my_language
-      //"__debug": "https://softinst73904.host.vifib.net/xmas/lang/" + my_language + "/debug.json"
+      //"__debug": "https://softinst103163.host.vifib.net/xmas/lang/" + my_language + "/debug.json"
     };
   }
 
@@ -265,6 +265,7 @@
       if (!target || target.indexOf("http") === -1 || gadget.state.online === false) {
         return;
       }
+
       return new RSVP.Queue()
         .push(function () {
           return gadget.volt_get(target);
@@ -285,7 +286,13 @@
             //  topic.proposal.substring(0,10).split(" ").join("-").toLowerCase()
             //);
             tab_head += getTemplate(KLASS, "dialog_tab_header").supplant(topic);
-            tab_content += getTemplate(KLASS, "dialog_tab_content").supplant(topic);
+
+            // new year
+            if (target.indexOf("31.json") > -1) {
+              tab_content += getTemplate(KLASS, "dialog_ny_content").supplant(topic);
+            } else {
+              tab_content += getTemplate(KLASS, "dialog_tab_content").supplant(topic);
+            }
           }
 
           setDom(dict.dialog_content, getTemplate(KLASS, "dialog_template").supplant({
